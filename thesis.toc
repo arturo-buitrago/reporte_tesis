@@ -1,0 +1,15 @@
+\select@language {USenglish}
+\select@language {german}
+\select@language {USenglish}
+\contentsline {chapter}{Contents}{5}
+\contentsline {chapter}{\numberline {1}Introduction}{6}
+\contentsline {chapter}{\numberline {2}Background}{8}
+\contentsline {section}{\numberline {2.1}Random Access and its Limitations}{8}
+\contentsline {section}{\numberline {2.2}Clustering}{9}
+\contentsline {chapter}{\numberline {3}Implementation/Results}{11}
+\contentsline {section}{\numberline {3.1}Implementation}{11}
+\contentsline {section}{\numberline {3.2}Results}{11}
+\contentsline {chapter}{\numberline {4}Conclusions and Outlook}{12}
+\contentsline {chapter}{\numberline {A}}{13}
+\contentsline {chapter}{\numberline {B}Notation und Abk\IeC {\"u}rzungen}{14}
+\contentsline {chapter}{Bibliography}{16}

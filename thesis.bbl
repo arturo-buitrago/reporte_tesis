@@ -1,0 +1,90 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{LWW{\etalchar{+}}14}
+
+\bibitem[{3rd}11]{3rdGenerationPartnershipProject;2011}
+{3rd Generation Partnership Project;}.
+\newblock {Ran Improvements for Machine-type Communications [RP-100330]}, 2011.
+
+\bibitem[ATN14]{Afsar2014}
+M.~Mehdi Afsar and Mohammad~H. Tayarani-N.
+\newblock {Clustering in sensor networks: A literature survey}.
+\newblock {\em Journal of Network and Computer Applications}, 46:198--226,
+  2014.
+
+\bibitem[Cox12]{Cox2012}
+Christopher Cox.
+\newblock {\em {AN INTRODUCTION TO LTE: LTE, LTE-Advance, SAE and 4G Mobile
+  Communicatios}}.
+\newblock 2012.
+
+\bibitem[JYZ09]{Jiang2009}
+Congfeng Jiang, Daomin Yuan, and Yinghui Zhao.
+\newblock {Towards Clustering Algorithms in Wireless Sensor Networks-A Survey}.
+\newblock {\em 2009 IEEE Wireless Communications and Networking Conference
+  (WCNC2009)}, pages 1--6, 2009.
+
+\bibitem[KK14]{Klugel2014}
+Markus Klugel and Wolfgang Kellerer.
+\newblock {Introduction of an efficiency metric for device-to-device
+  communication in cellular networks}.
+\newblock {\em IEEE Vehicular Technology Conference}, 2014.
+
+\bibitem[LAAZ14]{Laya2014}
+A~Laya, L~Alonso, and J~Alonso-Zarate.
+\newblock {Is the Random Access Channel of {\{}LTE{\}} and {\{}LTE-A{\}}
+  Suitable for {\{}M2M{\}} Communications? A Survey of Alternatives}.
+\newblock 16(1):4--16, 2014.
+
+\bibitem[LQL13]{Liao2013}
+Ying Liao, Huan Qi, and Weiqun Li.
+\newblock {Load-balanced clustering algorithm with distributed
+  self-organization for wireless sensor networks}.
+\newblock {\em IEEE Sensors Journal}, 13(5):1498--1506, 2013.
+
+\bibitem[LWW{\etalchar{+}}14]{Laya2014a}
+Andres Laya, Kun Wang, Ashraf~Awadelkarim Widaa, Jesus Alonso-Zarate, Jan
+  Markendahl, Francisco Diaz, and Luis Alonso.
+\newblock {Device-to-device communications and small cells: Enabling spectrum
+  reuse for dense networks}.
+\newblock {\em IEEE Wireless Communications}, 21(4):98--105, 2014.
+
+\bibitem[NXW11]{Niyato2011}
+D~Niyato, Lu~Xiao, and Ping Wang.
+\newblock {Machine-to-machine communications for home energy management system
+  in smart grid}.
+\newblock {\em Communications Magazine, IEEE}, 49(4):53--59, 2011.
+
+\bibitem[PCZZ16]{Polese2016}
+Michele Polese, Marco Centenaro, Andrea Zanella, and Michele Zorzi.
+\newblock {On the Evaluation of LTE Random Access Channel Overload in a Smart
+  City Scenario}.
+\newblock 3, 2016.
+
+\bibitem[RCCM15]{Riker2015}
+Andre Riker, Eduardo Cerqueira, Marilia Curado, and Edmundo Monteiro.
+\newblock {A Two-Tier Adaptive Data Aggregation Approach for M2M
+  Group-Communication}.
+\newblock {\em IEEE Sensors Journal}, 16(c):1--1, 2015.
+
+\bibitem[SOIJ15]{Shariatmadari2015}
+H.~Shariatmadari, P.~Osti, S.~Iraji, and R.~J{\"{a}}ntti.
+\newblock {Data Aggregation in Capillary Networks for Machine-to-Machine
+  Communications}.
+\newblock {\em Proc. IEEE Personal, Indoor and Mobile Radio Communications
+  (PIMRC) – Workshop on M2M Communications: Challenges, Solutions and
+  Applications}, pages 1100--1105, 2015.
+
+\bibitem[WHS12]{Wei2012a}
+Shih-en Wei, Hung-yun Hsieh, and Hsuan-jung Su.
+\newblock {Enabling Dense Machine-to-Machine Communications through
+  Interference-Controlled Clustering}.
+\newblock pages 774--779, 2012.
+
+\bibitem[WSH{\etalchar{+}}13]{Wang2013}
+Sen~Hung Wang, Hsuan~Jung Su, Hung~Yun Hsieh, Shu~Ping Yeh, and Minnie Ho.
+\newblock {Random access design for clustered wireless machine to machine
+  networks}.
+\newblock {\em 2013 1st International Black Sea Conference on Communications
+  and Networking, BlackSeaCom 2013}, pages 107--111, 2013.
+
+\end{thebibliography}

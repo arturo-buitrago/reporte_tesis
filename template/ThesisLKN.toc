@@ -1,0 +1,17 @@
+\select@language {USenglish}
+\select@language {german}
+\select@language {USenglish}
+\contentsline {chapter}{Contents}{5}
+\contentsline {chapter}{\numberline {1}Introduction}{6}
+\contentsline {chapter}{\numberline {2}Background}{7}
+\contentsline {section}{\numberline {2.1}Content}{7}
+\contentsline {chapter}{\numberline {3}Implementation/Results}{8}
+\contentsline {section}{\numberline {3.1}Implementation}{8}
+\contentsline {section}{\numberline {3.2}Results}{8}
+\contentsline {chapter}{\numberline {4}Conclusions and Outlook}{9}
+\contentsline {chapter}{\numberline {5}Formatting}{10}
+\contentsline {section}{\numberline {5.1}Figures and Tables}{10}
+\contentsline {section}{\numberline {5.2}Referencing}{11}
+\contentsline {chapter}{\numberline {A}}{12}
+\contentsline {chapter}{\numberline {B}Notation und Abk\IeC {\"u}rzungen}{13}
+\contentsline {chapter}{Bibliography}{14}
