@@ -17,48 +17,53 @@ Repeated entry---line 302 of file biblio.bib
  :                  ,
 I'm skipping whatever remains of this entry
 Warning--empty publisher in Cox2012
+Warning--there's a number but no volume in Forkel2004
+Warning--empty journal in Keeler
+Warning--empty year in Keeler
+Warning--empty journal in Keeler2016
 Warning--empty journal in Laya2014
+Warning--empty journal in Raschkowski
 Warning--empty journal in Polese2016
 Warning--empty journal in Wei2012a
-You've used 14 entries,
+You've used 18 entries,
             2543 wiz_defined-function locations,
-            656 strings with 7407 characters,
-and the built_in function-call counts, 6288 in all, are:
-= -- 631
-> -- 352
-< -- 6
-+ -- 127
-- -- 127
-* -- 473
-:= -- 1046
-add.period$ -- 41
-call.type$ -- 14
-change.case$ -- 100
-chr.to.int$ -- 14
-cite$ -- 18
-duplicate$ -- 227
-empty$ -- 399
-format.name$ -- 141
-if$ -- 1259
+            677 strings with 7930 characters,
+and the built_in function-call counts, 7774 in all, are:
+= -- 784
+> -- 407
+< -- 10
++ -- 144
+- -- 144
+* -- 570
+:= -- 1282
+add.period$ -- 53
+call.type$ -- 18
+change.case$ -- 122
+chr.to.int$ -- 18
+cite$ -- 27
+duplicate$ -- 294
+empty$ -- 507
+format.name$ -- 164
+if$ -- 1564
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 14
-newline$ -- 73
-num.names$ -- 42
-pop$ -- 91
+missing$ -- 18
+newline$ -- 93
+num.names$ -- 54
+pop$ -- 120
 preamble$ -- 1
-purify$ -- 115
+purify$ -- 141
 quote$ -- 0
-skip$ -- 211
+skip$ -- 265
 stack$ -- 0
-substring$ -- 344
-swap$ -- 45
-text.length$ -- 6
-text.prefix$ -- 2
+substring$ -- 429
+swap$ -- 56
+text.length$ -- 10
+text.prefix$ -- 4
 top$ -- 0
-type$ -- 108
-warning$ -- 4
-while$ -- 64
-width$ -- 16
-write$ -- 176
+type$ -- 140
+warning$ -- 9
+while$ -- 82
+width$ -- 20
+write$ -- 223
 (There was 1 error message)

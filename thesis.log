@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2016.7.7)  6 OCT 2016 00:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.7)  7 OCT 2016 19:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -355,10 +355,18 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: dvips.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
@@ -372,18 +380,12 @@ Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)))
+))
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
@@ -408,36 +410,42 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package pdftexcmds Info: \pdfdraftmode found.
 )
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
 
-Package epstopdf Warning: Drivers other than `pdftex.def' are not supported.
-
-)) (/usr/share/texlive/texmf-dist/tex/latex/base/doc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/doc.sty
 Package: doc 2010/02/04 v2.1e Standard LaTeX documentation package (FMi)
-\c@StandardModuleDepth=\count90
-\guard@level=\count91
+\c@StandardModuleDepth=\count91
+\guard@level=\count92
 \MacrocodeTopsep=\skip48
 \MacroIndent=\dimen108
-\macro@cnt=\count92
+\macro@cnt=\count93
 \MacroTopsep=\skip49
 \index@excludelist=\toks17
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count93
+\c@tracingmulticols=\count94
 \mult@box=\box26
 \multicol@leftmargin=\dimen109
-\c@unbalance=\count94
-\c@collectmore=\count95
-\doublecol@number=\count96
-\multicoltolerance=\count97
-\multicolpretolerance=\count98
+\c@unbalance=\count95
+\c@collectmore=\count96
+\doublecol@number=\count97
+\multicoltolerance=\count98
+\multicolpretolerance=\count99
 \full@width=\dimen110
 \page@free=\dimen111
 \premulticols=\dimen112
@@ -467,88 +475,116 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box47
 \@tempa=\box48
 \@tempa=\box49
-\c@columnbadness=\count99
-\c@finalcolumnbadness=\count100
+\c@columnbadness=\count100
+\c@finalcolumnbadness=\count101
 \last@try=\dimen114
 \multicolovershoot=\dimen115
 \multicolundershoot=\dimen116
 \mult@nat@firstbox=\box50
 \colbreak@box=\box51
-\multicol@sort@counter=\count101
+\multicol@sort@counter=\count102
 )
 \IndexMin=\dimen117
-\c@IndexColumns=\count102
+\c@IndexColumns=\count103
 \GlossaryMin=\dimen118
-\c@GlossaryColumns=\count103
-\check@sum=\count104
-\bslash@cnt=\count105
+\c@GlossaryColumns=\count104
+\check@sum=\count105
+\bslash@cnt=\count106
 \wrong@table=\toks18
-\c@CodelineNo=\count106
+\c@CodelineNo=\count107
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+)
+\c@ContinuedFloat=\count108
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count109
+\c@subtable=\count110
 ) (./thesis.aux
 (./Statements.aux) (./Kurzfassung.aux) (./Abstract.aux) (./Introduction.aux)
 (./Background.aux) (./Evaluation.aux) (./Conclusions.aux) (./Appendix.aux)
 (./Abbreviations.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
 
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count111
+\scratchdimen=\dimen126
+\scratchbox=\box52
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen127
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks20
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Package epstopdf Info: Source file: <figures/LKN_Logo_klein.eps>
+(epstopdf)                    date: 2008-04-24 16:53:26
+(epstopdf)                    size: 374694 bytes
+(epstopdf)             Output file: <figures/LKN_Logo_klein-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-10-06 23:39:12
+(epstopdf)                    size: 14364 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/LKN_Logo_klein-eps
+-converted-to.pdf figures/LKN_Logo_klein.eps>
+(epstopdf)             \includegraphics on input line 80.
+Package epstopdf Info: Output file is already uptodate.
 
-LaTeX Warning: File `LKN_Logo_klein.eps' not found on input line 77.
+<figures/LKN_Logo_klein-eps-converted-to.pdf, id=1, 460.72125pt x 418.56375pt>
+File: figures/LKN_Logo_klein-eps-converted-to.pdf Graphic file (type pdf)
 
-
-! LaTeX Error: File `LKN_Logo_klein.eps' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.77     \epsfbox{LKN_Logo_klein.eps}
-                                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Cannot determine size of graphic in LKN_Logo_klein.eps (no Bound
-ingBox).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.77     \epsfbox{LKN_Logo_klein.eps}
-                                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: LKN_Logo_klein.eps Graphic file (type eps)
-<LKN_Logo_klein.eps>
+<use figures/LKN_Logo_klein-eps-converted-to.pdf>
+Package pdftex.def Info: figures/LKN_Logo_klein-eps-converted-to.pdf used on in
+put line 80.
+(pdftex.def)             Requested size: 113.81102pt x 103.39525pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 89.
+(Font)              <12> on input line 92.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 89.
+(Font)              <8> on input line 92.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 89.
+(Font)              <6> on input line 92.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 106.
+(Font)              <14.4> on input line 109.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 106.
+(Font)              <7> on input line 109.
  [1
 
-]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/LKN_Logo_klein-e
+ps-converted-to.pdf>]
 \openout2 = `Statements.aux'.
 
- (./Statements.tex
+
+(./Statements.tex
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
@@ -593,29 +629,73 @@ Chapter 1.
 
  (./Background.tex
 Chapter 2.
-File: figures/Random_Access_Procedure.eps Graphic file (type eps)
-<figures/Random_Access_Procedure.eps> [8
+<figures/Random_Access_Procedure.jpg, id=33, 629.35126pt x 488.82625pt>
+File: figures/Random_Access_Procedure.jpg Graphic file (type jpg)
+
+<use figures/Random_Access_Procedure.jpg>
+Package pdftex.def Info: figures/Random_Access_Procedure.jpg used on input line
+ 8.
+(pdftex.def)             Requested size: 283.20544pt x 219.96977pt.
+ [8
 
 
 
-] [9]
-File: figures/D2D_clustering.eps Graphic file (type eps)
- <figures/D2D_clustering.eps>)
-[10]
+ <./figures/Random_Access_Procedure.jpg>] [9] <figures/D2D_clustering.png, id=4
+1, 1015.795pt x 637.38126pt>
+File: figures/D2D_clustering.png Graphic file (type png)
+
+<use figures/D2D_clustering.png>
+Package pdftex.def Info: figures/D2D_clustering.png used on input line 30.
+(pdftex.def)             Requested size: 253.94812pt x 159.34492pt.
+) [10 <./figures/D2D_clustering.png>]
 \openout2 = `Evaluation.aux'.
 
- (./Evaluation.tex
+
+(./Evaluation.tex
 Chapter 3.
-) [11
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+ [11
 
 
 
 ]
+<figures/PPP.pdf, id=52, 578.16pt x 433.62pt>
+File: figures/PPP.pdf Graphic file (type pdf)
+ <use figures/PPP.pdf>
+Package pdftex.def Info: figures/PPP.pdf used on input line 27.
+(pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
+ [12 <./figures/PPP.pdf>] [13] <figures/Madrid.png, id=83, 626.34pt x 778.91pt>
+File: figures/Madrid.png Graphic file (type png)
+
+<use figures/Madrid.png>
+Package pdftex.def Info: figures/Madrid.png used on input line 75.
+(pdftex.def)             Requested size: 193.50578pt x 240.63953pt.
+
+Overfull \hbox (32.25055pt too wide) in paragraph at lines 75--76
+ [][] 
+ []
+
+<figures/mh_grid.pdf, id=84, 578.16pt x 433.62pt>
+File: figures/mh_grid.pdf Graphic file (type pdf)
+ <use figures/mh_grid.pdf>
+Package pdftex.def Info: figures/mh_grid.pdf used on input line 81.
+(pdftex.def)             Requested size: 316.83461pt x 237.62497pt.
+
+Overfull \hbox (17.36862pt too wide) in paragraph at lines 81--82
+ [][] 
+ []
+
+[14 <./figures/Madrid.png> <./figures/mh_grid.pdf>]) [15]
 \openout2 = `Conclusions.aux'.
 
  (./Conclusions.tex
 Chapter 4.
-) [12
+) [16
 
 
 
@@ -624,7 +704,7 @@ Chapter 4.
 
  (./Appendix.tex
 Appendix A.
-) [13
+) [17
 
 
 
@@ -634,39 +714,76 @@ Appendix A.
  (./Abbreviations.tex
 Appendix B.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [14
-
-
-
-] [15] (./thesis.bbl
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
- [16
-
-
-]
-Underfull \hbox (badness 1635) in paragraph at lines 78--82
-[]\OT1/cmr/m/n/12 Shih-en Wei, Hung-yun Hsieh, and Hsuan-jung Su.  En-abling De
-nse
+Overfull \hbox (78.71652pt too wide) in paragraph at lines 5--41
+[][] 
  []
 
-) [17] (./thesis.aux (./Statements.aux) (./Kurzfassung.aux) (./Abstract.aux)
-(./Introduction.aux) (./Background.aux) (./Evaluation.aux) (./Conclusions.aux)
-(./Appendix.aux) (./Abbreviations.aux)) ) 
-Here is how much of TeX's memory you used:
- 2973 strings out of 493305
- 43535 string characters out of 6139898
- 121741 words of memory out of 5000000
- 6293 multiletter control sequences out of 15000+600000
- 10420 words of font info for 36 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
- 54i,8n,45p,966b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (17 pages, 23776 bytes).
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [18
+
+
+
+] [19] (./thesis.lof)
+\tf@lof=\write4
+\openout4 = `thesis.lof'.
+
+ [20
+
+
+] (./thesis.lot)
+\tf@lot=\write5
+\openout5 = `thesis.lot'.
+
+ (./thesis.bbl [21
+
+]
+
+! Package inputenc Error: Unicode char \u8:∗ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35   using its factorial moment measures ∗
+                                              }.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[22
+
+]) [23] (./thesis.aux (./Statements.aux) (./Kurzfassung.aux) (./Abstract.aux) (
+./Introduction.aux) (./Background.aux) (./Evaluation.aux) (./Conclusions.aux) (
+./Appendix.aux) (./Abbreviations.aux)) ) 
+Here is how much of TeX's memory you used:
+ 4646 strings out of 493304
+ 71771 string characters out of 6139872
+ 157193 words of memory out of 5000000
+ 7937 multiletter control sequences out of 15000+600000
+ 11027 words of font info for 38 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 54i,12n,46p,966b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmti12.pfb>
+Output written on thesis.pdf (23 pages, 553341 bytes).
+PDF statistics:
+ 208 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -6,10 +6,16 @@
 \contentsline {chapter}{\numberline {2}Background}{8}
 \contentsline {section}{\numberline {2.1}Random Access and its Limitations}{8}
 \contentsline {section}{\numberline {2.2}Clustering}{9}
-\contentsline {chapter}{\numberline {3}Implementation/Results}{11}
-\contentsline {section}{\numberline {3.1}Implementation}{11}
-\contentsline {section}{\numberline {3.2}Results}{11}
-\contentsline {chapter}{\numberline {4}Conclusions and Outlook}{12}
-\contentsline {chapter}{\numberline {A}}{13}
-\contentsline {chapter}{\numberline {B}Notation und Abk\IeC {\"u}rzungen}{14}
-\contentsline {chapter}{Bibliography}{16}
+\contentsline {chapter}{\numberline {3}Implementation}{11}
+\contentsline {section}{\numberline {3.1}Generation and distribution of UEs}{11}
+\contentsline {section}{\numberline {3.2}Path loss (attenuation)}{12}
+\contentsline {subsection}{\numberline {3.2.1}Manhattan Grid}{13}
+\contentsline {subsection}{\numberline {3.2.2}Line-of-Sight}{14}
+\contentsline {subsection}{\numberline {3.2.3}Non-Line-of-Sight}{14}
+\contentsline {section}{\numberline {3.3}Shadow Fading}{15}
+\contentsline {chapter}{\numberline {4}Conclusions and Outlook}{16}
+\contentsline {chapter}{\numberline {A}}{17}
+\contentsline {chapter}{\numberline {B}Notation und Abk\IeC {\"u}rzungen}{18}
+\contentsline {chapter}{List of Figures}{20}
+\contentsline {chapter}{List of Tables}{21}
+\contentsline {chapter}{Bibliography}{22}

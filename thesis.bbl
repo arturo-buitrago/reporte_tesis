@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{LWW{\etalchar{+}}14}
+\begin{thebibliography}{MwcEftTtIS15}
 
 \bibitem[{3rd}11]{3rdGenerationPartnershipProject;2011}
 {3rd Generation Partnership Project;}.
@@ -17,11 +17,28 @@ Christopher Cox.
   Communicatios}}.
 \newblock 2012.
 
+\bibitem[FSA04]{Forkel2004}
+Ingo Forkel, Marc Schinnenburg, and Markus Ang.
+\newblock {Generation of two-dimensional correlated shadowing for mobile radio
+  network simulation}.
+\newblock {\em WPMC, sep}, (February):10--14, 2004.
+
 \bibitem[JYZ09]{Jiang2009}
 Congfeng Jiang, Daomin Yuan, and Yinghui Zhao.
 \newblock {Towards Clustering Algorithms in Wireless Sensor Networks-A Survey}.
 \newblock {\em 2009 IEEE Wireless Communications and Networking Conference
   (WCNC2009)}, pages 1--6, 2009.
+
+\bibitem[Kee]{Keeler}
+Holger~Paul Keeler.
+\newblock {Studying the SINR process of the typical user in Poisson networks by
+  using its factorial moment measures ∗}.
+\newblock pages 1--27.
+
+\bibitem[Kee16]{Keeler2016}
+Paul Keeler.
+\newblock {Notes on the Poisson point process}.
+\newblock pages 1--33, 2016.
 
 \bibitem[KK14]{Klugel2014}
 Markus Klugel and Wolfgang Kellerer.
@@ -43,10 +60,16 @@ Ying Liao, Huan Qi, and Weiqun Li.
 
 \bibitem[LWW{\etalchar{+}}14]{Laya2014a}
 Andres Laya, Kun Wang, Ashraf~Awadelkarim Widaa, Jesus Alonso-Zarate, Jan
-  Markendahl, Francisco Diaz, and Luis Alonso.
+  Markendahl, and Luis Alonso.
 \newblock {Device-to-device communications and small cells: Enabling spectrum
   reuse for dense networks}.
 \newblock {\em IEEE Wireless Communications}, 21(4):98--105, 2014.
+
+\bibitem[MwcEftTtIS15]{Raschkowski}
+Mobile and wireless communications Enablers for the Twenty-twenty
+  Information~Society.
+\newblock {Deliverable D1.4 METIS Channel Models}.
+\newblock 2015.
 
 \bibitem[NXW11]{Niyato2011}
 D~Niyato, Lu~Xiao, and Ping Wang.

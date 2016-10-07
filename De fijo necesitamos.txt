@@ -1,0 +1,44 @@
+De fijo necesitamos:
+	d2d
+	clusters
+	mht
+
+
+BUENO A VER QUE PUTAS QUEREMOS DE LA VIDA HOY
+	1. Mandar correillo a JGH para ver si el pago esta a carrete [DONE]
+	2. Dejar los files ak7 para los tests
+		2.5 Automatizar la vara! [DONE]
+	3. Escribir unas 5 paginas
+	4. Escribir el LEACH modificado
+	5. Correo a tom joint session
+	6. Anmeldearse a frances [DONE] -> Manana
+
+
+TESIS
+	Intro - 2 pags
+
+	Background - 3 pags
+
+	Implementation
+		-pequeno rundown de como vamos a estar haciendo  las varas
+		-overview de los puntos mas importantes
+
+		Simulation
+			Generation and Distribution of UEs (PPP)
+			Clustering Algs (CUALES!)
+			RA (Codiguillo de Mikkkkeeeel)
+			PL + Manhattan Grid (METIS, action shots aww yiss)
+				PL
+			Shadowing (Nice little graphic here too)
+		modelar 
+	
+	Results
+
+
+
+
+
+
+
+2nd or 3rd of November presentation
+13th of October hand in 
