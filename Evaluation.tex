@@ -74,16 +74,16 @@ The introduction of an explicit grid raises the issue of the positioning of our 
   \centering
   \includegraphics[width=1.2\linewidth]{figures/Madrid}
   \caption{Madrid grid \cite{Raschkowski}}
-  \label{fig:sub1}
+  \label{fig:Madrid}
 \end{subfigure}%
 \begin{subfigure}{.65\textwidth}
   \centering
   \includegraphics[width=1.058\linewidth]{figures/mh_grid}
   \caption{Own implementation, including moved UEs}
-  \label{fig:sub2}
+  \label{fig:mh_grid_own}
 \end{subfigure}
 \caption{Comparison between two Manhattan Grids}
-\label{fig:test}
+\label{fig:mh_grid}
 \end{figure}
 
 
@@ -110,3 +110,21 @@ R(\Delta x) = e^{-\frac{|\Delta x|}{d_{corr}} ln(2)}
 \end{equation}
 
 After generating the shadow fading variables with equation \ref{eq:SF} and the autocorrelation coefficients with equation \ref{eq:corr}, both matrices are convoluted to generate the correlated values. Convolution does not alter the underlying distribution, but it does elicit a correction of the mean and standard deviation (compare with \cite{Forkel2004}) in order to return it to the values of the original Gaussian distribution. Our realization is shown below, both before and after the aforementioned correction for spatial correlation.
+
+\begin{figure}
+\centering
+\begin{subfigure}{.45\textwidth}
+  \centering
+  \includegraphics[width=1.2\linewidth]{figures/noise_before}
+  \caption{Shadow Fading values, before adjustment for correlation}
+  \label{fig:sf_no_correlation}
+\end{subfigure}%
+\begin{subfigure}{.45\textwidth}
+  \centering
+  \includegraphics[width=1.2\linewidth]{figures/noise_after}
+  \caption{Shadow Fading values, after matrix convolution}
+  \label{fig:sf_correlated}
+\end{subfigure}
+\caption{Shadow Fading values before and after correlation}
+\label{fig:SF}
+\end{figure}

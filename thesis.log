@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.7.7)  7 OCT 2016 19:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.8)  8 OCT 2016 20:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+Babel <3.9h> and hyphenation patterns for 33 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -519,18 +519,18 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 (./Abbreviations.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -549,15 +549,15 @@ LaTeX Font Info:    ... okay on input line 72.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package epstopdf Info: Source file: <figures/LKN_Logo_klein.eps>
-(epstopdf)                    date: 2008-04-24 16:53:26
+(epstopdf)                    date: 2016-10-07 20:10:54
 (epstopdf)                    size: 374694 bytes
 (epstopdf)             Output file: <figures/LKN_Logo_klein-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2016-10-06 23:39:12
+(epstopdf)                    date: 2016-10-07 20:10:54
 (epstopdf)                    size: 14364 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/LKN_Logo_klein-eps
 -converted-to.pdf figures/LKN_Logo_klein.eps>
-(epstopdf)             \includegraphics on input line 80.
+(epstopdf)             \includegraphics on input line 79.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/LKN_Logo_klein-eps-converted-to.pdf, id=1, 460.72125pt x 418.56375pt>
@@ -565,18 +565,18 @@ File: figures/LKN_Logo_klein-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/LKN_Logo_klein-eps-converted-to.pdf>
 Package pdftex.def Info: figures/LKN_Logo_klein-eps-converted-to.pdf used on in
-put line 80.
+put line 79.
 (pdftex.def)             Requested size: 113.81102pt x 103.39525pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 92.
+(Font)              <12> on input line 91.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 92.
+(Font)              <8> on input line 91.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 92.
+(Font)              <6> on input line 91.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 109.
+(Font)              <14.4> on input line 108.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 109.
+(Font)              <7> on input line 108.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/LKN_Logo_klein-e
@@ -690,12 +690,39 @@ Overfull \hbox (17.36862pt too wide) in paragraph at lines 81--82
  [][] 
  []
 
-[14 <./figures/Madrid.png> <./figures/mh_grid.pdf>]) [15]
+[14 <./figures/Madrid.png> <./figures/mh_grid.pdf>]
+<figures/noise_before.pdf, id=128, 578.16pt x 433.62pt>
+File: figures/noise_before.pdf Graphic file (type pdf)
+
+<use figures/noise_before.pdf>
+Package pdftex.def Info: figures/noise_before.pdf used on input line 118.
+(pdftex.def)             Requested size: 248.78714pt x 186.5853pt.
+
+Overfull \hbox (41.46399pt too wide) in paragraph at lines 118--119
+ [][] 
+ []
+
+<figures/noise_after.pdf, id=129, 578.16pt x 433.62pt>
+File: figures/noise_after.pdf Graphic file (type pdf)
+
+<use figures/noise_after.pdf>
+Package pdftex.def Info: figures/noise_after.pdf used on input line 124.
+(pdftex.def)             Requested size: 248.78714pt x 186.5853pt.
+
+Overfull \hbox (41.46399pt too wide) in paragraph at lines 124--125
+ [][] 
+ []
+
+) [15] [16 <./figures/noise_before.pdf> <./figures/noise_after.pdf
+
+pdfTeX warning: pdflatex (file ./figures/noise_after.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
 \openout2 = `Conclusions.aux'.
 
  (./Conclusions.tex
 Chapter 4.
-) [16
+) [17
 
 
 
@@ -704,7 +731,7 @@ Chapter 4.
 
  (./Appendix.tex
 Appendix A.
-) [17
+) [18
 
 
 
@@ -721,22 +748,22 @@ Overfull \hbox (78.71652pt too wide) in paragraph at lines 5--41
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [18
+) [19
 
 
 
-] [19] (./thesis.lof)
+] [20] (./thesis.lof)
 \tf@lof=\write4
 \openout4 = `thesis.lof'.
 
- [20
+ [21
 
 
 ] (./thesis.lot)
 \tf@lot=\write5
 \openout5 = `thesis.lot'.
 
- (./thesis.bbl [21
+ (./thesis.bbl [22
 
 ]
 
@@ -752,18 +779,18 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[22
+[23
 
-]) [23] (./thesis.aux (./Statements.aux) (./Kurzfassung.aux) (./Abstract.aux) (
+]) [24] (./thesis.aux (./Statements.aux) (./Kurzfassung.aux) (./Abstract.aux) (
 ./Introduction.aux) (./Background.aux) (./Evaluation.aux) (./Conclusions.aux) (
 ./Appendix.aux) (./Abbreviations.aux)) ) 
 Here is how much of TeX's memory you used:
- 4646 strings out of 493304
- 71771 string characters out of 6139872
- 157193 words of memory out of 5000000
- 7937 multiletter control sequences out of 15000+600000
+ 4661 strings out of 494378
+ 72149 string characters out of 6163207
+ 154607 words of memory out of 5000000
+ 7756 multiletter control sequences out of 15000+600000
  11027 words of font info for 38 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
+ 372 hyphenation exceptions out of 8191
  54i,12n,46p,966b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
@@ -780,10 +807,10 @@ s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmti12.pfb>
-Output written on thesis.pdf (23 pages, 553341 bytes).
+Output written on thesis.pdf (24 pages, 1124982 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
+ 284 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
