@@ -12,12 +12,105 @@ A level-1 auxiliary file: Appendix.aux
 A level-1 auxiliary file: Abbreviations.aux
 The style file: alpha.bst
 Database file #1: biblio.bib
-Repeated entry---line 302 of file biblio.bib
+Warning--I'm ignoring Lee's extra "pages" field
+--line 296 of file biblio.bib
+Repeated entry---line 724 of file biblio.bib
+ : @misc{3rdGenerationPartnershipProject;2011
+ :                                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 797 of file biblio.bib
+ : @article{3rdGenerationPartnershipProject;2012
+ :                                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 805 of file biblio.bib
+ : @article{Erturk2013
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 842 of file biblio.bib
+ : @article{Heino2010
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 904 of file biblio.bib
+ : @misc{3rdGenerationPartnershipProject;
+ :                                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 909 of file biblio.bib
+ : @article{Meinila2009
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 924 of file biblio.bib
+ : @article{Raschkowski
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 929 of file biblio.bib
+ : @article{Klugel2014a
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 939 of file biblio.bib
+ : @article{Klugel2014
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 949 of file biblio.bib
+ : @article{Forkel2004
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1028 of file biblio.bib
+ : @article{Polese2016
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1117 of file biblio.bib
+ : @article{Liao2013
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1198 of file biblio.bib
+ : @article{Niyato2011
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1213 of file biblio.bib
+ : @article{Afsar2014
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1343 of file biblio.bib
+ : @article{Jiang2009
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1356 of file biblio.bib
+ : @article{Wei2012
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1364 of file biblio.bib
+ : @article{Wei2012a
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1373 of file biblio.bib
+ : @article{Wang2013
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1385 of file biblio.bib
+ : @book{Cox2012
+ :              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1427 of file biblio.bib
+ : @article{Riker2015
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1449 of file biblio.bib
+ : @article{Shariatmadari2015
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1459 of file biblio.bib
  : @article{Laya2014
  :                  ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 1468 of file biblio.bib
+ : @article{Laya2014a
+ :                   ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in 3Gpp2009
+Warning--empty journal in 3rdGenerationPartnershipProject;2012
 Warning--empty publisher in Cox2012
 Warning--there's a number but no volume in Forkel2004
+Warning--empty journal in Heino2010
 Warning--empty journal in Keeler
 Warning--empty year in Keeler
 Warning--empty journal in Keeler2016
@@ -25,45 +118,46 @@ Warning--empty journal in Laya2014
 Warning--empty journal in Raschkowski
 Warning--empty journal in Polese2016
 Warning--empty journal in Wei2012a
-You've used 18 entries,
+Warning--empty journal in Wei2012
+You've used 28 entries,
             2543 wiz_defined-function locations,
-            677 strings with 7930 characters,
-and the built_in function-call counts, 7774 in all, are:
-= -- 784
-> -- 407
-< -- 10
-+ -- 144
-- -- 144
-* -- 570
-:= -- 1282
-add.period$ -- 53
-call.type$ -- 18
-change.case$ -- 122
-chr.to.int$ -- 18
-cite$ -- 27
-duplicate$ -- 294
-empty$ -- 507
-format.name$ -- 164
-if$ -- 1564
-int.to.chr$ -- 1
+            733 strings with 9858 characters,
+and the built_in function-call counts, 11906 in all, are:
+= -- 1196
+> -- 620
+< -- 16
++ -- 221
+- -- 219
+* -- 878
+:= -- 1961
+add.period$ -- 82
+call.type$ -- 28
+change.case$ -- 190
+chr.to.int$ -- 26
+cite$ -- 41
+duplicate$ -- 452
+empty$ -- 782
+format.name$ -- 252
+if$ -- 2393
+int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 18
-newline$ -- 93
-num.names$ -- 54
-pop$ -- 120
+missing$ -- 27
+newline$ -- 142
+num.names$ -- 84
+pop$ -- 181
 preamble$ -- 1
-purify$ -- 141
+purify$ -- 219
 quote$ -- 0
-skip$ -- 265
+skip$ -- 409
 stack$ -- 0
-substring$ -- 429
-swap$ -- 56
-text.length$ -- 10
-text.prefix$ -- 4
+substring$ -- 646
+swap$ -- 82
+text.length$ -- 16
+text.prefix$ -- 8
 top$ -- 0
-type$ -- 140
-warning$ -- 9
-while$ -- 82
-width$ -- 20
-write$ -- 223
-(There was 1 error message)
+type$ -- 220
+warning$ -- 13
+while$ -- 122
+width$ -- 30
+write$ -- 346
+(There were 23 error messages)

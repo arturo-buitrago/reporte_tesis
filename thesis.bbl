@@ -1,12 +1,30 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{MwcEftTtIS15}
+\begin{thebibliography}{LWW{\etalchar{+}}14}
+
+\bibitem[3Gp09]{3Gpp2009}
+3Gpp.
+\newblock {TR 136 942 - V8.1.0 - LTE; Evolved Universal Terrestrial Radio
+  Access (E-UTRA); Radio Frequency (RF) system scenarios (3GPP TR 36.942
+  version 8.1.0 Release 8)}.
+\newblock 0:0--84, 2009.
 
 \bibitem[{3rd}11]{3rdGenerationPartnershipProject;2011}
 {3rd Generation Partnership Project;}.
 \newblock {Ran Improvements for Machine-type Communications [RP-100330]}, 2011.
 
+\bibitem[{3rd}12]{3rdGenerationPartnershipProject;2012}
+{3rd Generation Partnership Project;}.
+\newblock {Evolved Universal Terrestrial Radio Acces; LTE Coverage Enhancements
+  (Release 11) [36-824]}.
+\newblock 0(Release 11), 2012.
+
+\bibitem[{3rd}14]{3rdGenerationPartnershipProject;}
+{3rd Generation Partnership Project;}.
+\newblock {Study on LTE Device to Device Proximity Services; Radio Aspects
+  (Release 12) [36843-c01]}, 2014.
+
 \bibitem[ATN14]{Afsar2014}
-M.~Mehdi Afsar and Mohammad~H. Tayarani-N.
+M~Mehdi Afsar and Mohammad~H Tayarani-N.
 \newblock {Clustering in sensor networks: A literature survey}.
 \newblock {\em Journal of Network and Computer Applications}, 46:198--226,
   2014.
@@ -17,11 +35,24 @@ Christopher Cox.
   Communicatios}}.
 \newblock 2012.
 
+\bibitem[EMIA13]{Erturk2013}
+M~Cenk Erturk, Sayandev Mukherjee, Hiroyuki Ishii, and Huseyin Arslan.
+\newblock {Distributions of transmit power and SINR in device-to-device
+  networks}.
+\newblock {\em IEEE Communications Letters}, 17(2):273--276, 2013.
+
 \bibitem[FSA04]{Forkel2004}
 Ingo Forkel, Marc Schinnenburg, and Markus Ang.
 \newblock {Generation of two-dimensional correlated shadowing for mobile radio
   network simulation}.
 \newblock {\em WPMC, sep}, (February):10--14, 2004.
+
+\bibitem[HSK{\etalchar{+}}10]{Heino2010}
+Petteri Heino, Essi Suikkanen, Esa Kunnari, Juha Meinil{\"{a}}, Pekka
+  Ky{\"{o}}sti, Lassi Hentil{\"{a}}, Tommi J{\"{a}}ms{\"{a}}, and Milan
+  Narand{\v{z}}i{\'{c}}.
+\newblock {D5.3: WINNER+ Final Channel Models}.
+\newblock 1(107):107, 2010.
 
 \bibitem[JYZ09]{Jiang2009}
 Congfeng Jiang, Daomin Yuan, and Yinghui Zhao.
@@ -40,17 +71,32 @@ Paul Keeler.
 \newblock {Notes on the Poisson point process}.
 \newblock pages 1--33, 2016.
 
-\bibitem[KK14]{Klugel2014}
+\bibitem[KK14a]{Klugel2014}
 Markus Klugel and Wolfgang Kellerer.
 \newblock {Introduction of an efficiency metric for device-to-device
   communication in cellular networks}.
 \newblock {\em IEEE Vehicular Technology Conference}, 2014.
 
+\bibitem[KK14b]{Klugel2014a}
+Markus Kl{\"{u}}gel and Wolfgang Kellerer.
+\newblock {On the feasibility of frequency reuse and spatial occupation in
+  wireless device-to-device networks}.
+\newblock {\em 2014 IEEE International Black Sea Conference on Communications
+  and Networking, BlackSeaCom 2014}, pages 154--159, 2014.
+
 \bibitem[LAAZ14]{Laya2014}
 A~Laya, L~Alonso, and J~Alonso-Zarate.
-\newblock {Is the Random Access Channel of {\{}LTE{\}} and {\{}LTE-A{\}}
-  Suitable for {\{}M2M{\}} Communications? A Survey of Alternatives}.
+\newblock {Is the Random Access Channel of {\{}{\{}{\}}LTE{\{}{\}}{\}} and
+  {\{}{\{}{\}}LTE-A{\{}{\}}{\}} Suitable for {\{}{\{}{\}}M2M{\{}{\}}{\}}
+  Communications? A Survey of Alternatives}.
 \newblock 16(1):4--16, 2014.
+
+\bibitem[LLA15]{Lee}
+Namyoon Lee, Xingqin Lin, and Jeffrey~G Andrews.
+\newblock {Power Control for D2D Underlaid Cellular Networks: Modeling,
+  Algorithms and Analysis}.
+\newblock {\em IEEE Journal on Selected Areas in Communications}, 33(1):1--12,
+  2015.
 
 \bibitem[LQL13]{Liao2013}
 Ying Liao, Huan Qi, and Weiqun Li.
@@ -65,9 +111,16 @@ Andres Laya, Kun Wang, Ashraf~Awadelkarim Widaa, Jesus Alonso-Zarate, Jan
   reuse for dense networks}.
 \newblock {\em IEEE Wireless Communications}, 21(4):98--105, 2014.
 
-\bibitem[MwcEftTtIS15]{Raschkowski}
-Mobile and wireless communications Enablers for the Twenty-twenty
-  Information~Society.
+\bibitem[MKJH09]{Meinila2009}
+Juha Meinil{\"{a}}, Pekka Ky{\"{o}}sti, Tommi J{\"{a}}ms{\"{a}}, and Lassi
+  Hentil{\"{a}}.
+\newblock {WINNER II Channel Models}.
+\newblock {\em Radio Technologies and Concepts for IMT-Advanced}, 1(82):39--92,
+  2009.
+
+\bibitem[Mw15]{Raschkowski}
+Mobile and {wireless communications Enablers for the Twenty-twenty Information
+  Society}.
 \newblock {Deliverable D1.4 METIS Channel Models}.
 \newblock 2015.
 
@@ -87,21 +140,32 @@ Michele Polese, Marco Centenaro, Andrea Zanella, and Michele Zorzi.
 Andre Riker, Eduardo Cerqueira, Marilia Curado, and Edmundo Monteiro.
 \newblock {A Two-Tier Adaptive Data Aggregation Approach for M2M
   Group-Communication}.
-\newblock {\em IEEE Sensors Journal}, 16(c):1--1, 2015.
+\newblock {\em IEEE Sensors Journal}, 16(c):1, 2015.
+
+\bibitem[{Rep}09]{ReportITU-RM.2135-12009}
+{Report ITU-R M.2135-1}.
+\newblock {Guidelines for evaluation of radio interface technologies for
+  IMTadvanced}.
+\newblock {\em Evaluation}, 93(3), 2009.
 
 \bibitem[SOIJ15]{Shariatmadari2015}
-H.~Shariatmadari, P.~Osti, S.~Iraji, and R.~J{\"{a}}ntti.
+H~Shariatmadari, P~Osti, S~Iraji, and R~J{\"{a}}ntti.
 \newblock {Data Aggregation in Capillary Networks for Machine-to-Machine
   Communications}.
 \newblock {\em Proc. IEEE Personal, Indoor and Mobile Radio Communications
   (PIMRC) – Workshop on M2M Communications: Challenges, Solutions and
   Applications}, pages 1100--1105, 2015.
 
-\bibitem[WHS12]{Wei2012a}
+\bibitem[WHS12a]{Wei2012a}
 Shih-en Wei, Hung-yun Hsieh, and Hsuan-jung Su.
 \newblock {Enabling Dense Machine-to-Machine Communications through
   Interference-Controlled Clustering}.
 \newblock pages 774--779, 2012.
+
+\bibitem[WHS12b]{Wei2012}
+Shih-en Wei, Hung-yun Hsieh, and Hsuan-jung Su.
+\newblock {Joint Optimization of Cluster Formation and Power Control}.
+\newblock pages 5512--5518, 2012.
 
 \bibitem[WSH{\etalchar{+}}13]{Wang2013}
 Sen~Hung Wang, Hsuan~Jung Su, Hung~Yun Hsieh, Shu~Ping Yeh, and Minnie Ho.

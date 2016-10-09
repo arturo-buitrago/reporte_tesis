@@ -1,6 +1,6 @@
 \chapter{Background}
 
-\section{Random Access and its Limitations}
+\section{Random Access and its Limitations}\label{B:RA}
 The necessity of the expansion of the existing standards of wireless networks for the effective handling of large numbers of Machine Type Communications (MTC) had already been identified by the 3GPP early in the implementation of Long Term Evolution (LTE) as a standard in \cite{3rdGenerationPartnershipProject;2011}. As explained in \cite{Laya2014}, a large amount of problems arise with increasingly large amounts of devices connecting to the Base Station (BS) or Evolved Node B (eNodeB) mostly due to the Random Access (RA) procedure that has to be initiated with every connection.
 
 \begin{figure}[!h]
@@ -15,8 +15,9 @@ This preamble is chosen randomly from an available set generated with a Zadoff-C
 
 When a large amount of these connections are initiated in a short time frame, the contention resolution procedures cannot deal with them in a timely manner and many of them are dropped or delayed significantly, waiting for an opportunity to synchronize with the eNodeB, as shown in \cite{Polese2016}. This scenario occurs most often either because the transmission times are highly correlated or just due to the large number of devices in a given area. Both of these circumstances, both in isolation and in conjunction, will be very ordinary occurences in Internet of Things (IoT) and Smart City applications. 
 
+\section{D2D}\label{B:D2D}
 
-\section{Clustering}
+\section{Clustering}\label{B:Cl}
 %llegar a como decidimos usar d2d en un ambiente de ciudad para probar nuestras mierdis
 
 Many approaches have been suggested for the improvement of the circumstances described in the preceding section, as summarized succintly in \cite{Laya2014}, mostly dealing with the improvement of the RA procedures or an expansion of the standards for the Random Access Channel (RACH). Another viable alternative, as presented in a variety of papers (\cite{Wei2012a},\cite{Laya2014a},\cite{Wang2013},\cite{Liao2013}) is the clustering of transmitting devices. This approach aims to reutilize the coding and frequency resources within a given set of UEs for different ends, such as decreasing the load on the eNB, increasing the coverage area of the network or minimizing the power consumption of the units involved.
