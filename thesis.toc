@@ -6,19 +6,19 @@
 \contentsline {chapter}{\numberline {2}Background}{8}
 \contentsline {section}{\numberline {2.1}Random Access and its Limitations}{8}
 \contentsline {section}{\numberline {2.2}D2D}{9}
-\contentsline {section}{\numberline {2.3}Clustering}{9}
-\contentsline {chapter}{\numberline {3}Implementation}{11}
-\contentsline {section}{\numberline {3.1}Generation and distribution of UEs}{11}
-\contentsline {section}{\numberline {3.2}Path loss (attenuation)}{12}
-\contentsline {subsection}{\numberline {3.2.1}Manhattan grid}{13}
-\contentsline {subsection}{\numberline {3.2.2}Line-of-sight}{14}
-\contentsline {subsection}{\numberline {3.2.3}Non-line-of-sight}{15}
-\contentsline {section}{\numberline {3.3}Shadow fading}{17}
-\contentsline {section}{\numberline {3.4}Random access procedure and interference}{19}
-\contentsline {section}{\numberline {3.5}Clustering Algorithms}{21}
-\contentsline {chapter}{\numberline {4}Conclusions and Outlook}{22}
-\contentsline {chapter}{\numberline {A}}{23}
-\contentsline {chapter}{\numberline {B}Notation und Abk\IeC {\"u}rzungen}{24}
-\contentsline {chapter}{List of Figures}{26}
-\contentsline {chapter}{List of Tables}{27}
-\contentsline {chapter}{Bibliography}{28}
+\contentsline {section}{\numberline {2.3}Clustering}{10}
+\contentsline {chapter}{\numberline {3}Implementation}{12}
+\contentsline {section}{\numberline {3.1}Generation and distribution of UEs}{12}
+\contentsline {section}{\numberline {3.2}Path loss (attenuation)}{13}
+\contentsline {subsection}{\numberline {3.2.1}Manhattan grid}{14}
+\contentsline {subsection}{\numberline {3.2.2}Line-of-sight}{15}
+\contentsline {subsection}{\numberline {3.2.3}Non-line-of-sight}{16}
+\contentsline {section}{\numberline {3.3}Shadow fading}{18}
+\contentsline {section}{\numberline {3.4}Random access procedure and interference}{20}
+\contentsline {section}{\numberline {3.5}Clustering Algorithms}{22}
+\contentsline {chapter}{\numberline {4}Conclusions and Outlook}{23}
+\contentsline {chapter}{\numberline {A}}{24}
+\contentsline {chapter}{\numberline {B}Notation und Abk\IeC {\"u}rzungen}{25}
+\contentsline {chapter}{List of Figures}{27}
+\contentsline {chapter}{List of Tables}{28}
+\contentsline {chapter}{Bibliography}{29}
