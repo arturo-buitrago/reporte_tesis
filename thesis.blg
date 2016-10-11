@@ -7,6 +7,7 @@ A level-1 auxiliary file: Abstract.aux
 A level-1 auxiliary file: Introduction.aux
 A level-1 auxiliary file: Background.aux
 A level-1 auxiliary file: Evaluation.aux
+A level-1 auxiliary file: Results.aux
 A level-1 auxiliary file: Conclusions.aux
 A level-1 auxiliary file: Appendix.aux
 A level-1 auxiliary file: Abbreviations.aux
@@ -29,6 +30,10 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 842 of file biblio.bib
  : @article{Heino2010
  :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 868 of file biblio.bib
+ : @article{Shalizi2009
+ :                     ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 904 of file biblio.bib
  : @misc{3rdGenerationPartnershipProject;
@@ -53,6 +58,10 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 949 of file biblio.bib
  : @article{Forkel2004
  :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 995 of file biblio.bib
+ : @article{Heinzelman2000
+ :                        ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 1028 of file biblio.bib
  : @article{Polese2016
@@ -109,6 +118,7 @@ I'm skipping whatever remains of this entry
 Warning--empty journal in 3Gpp2009
 Warning--empty journal in 3rdGenerationPartnershipProject;2012
 Warning--empty publisher in Cox2012
+Warning--empty publisher in Everitt2011
 Warning--there's a number but no volume in Forkel2004
 Warning--empty journal in Heino2010
 Warning--empty journal in Keeler
@@ -117,47 +127,48 @@ Warning--empty journal in Keeler2016
 Warning--empty journal in Laya2014
 Warning--empty journal in Raschkowski
 Warning--empty journal in Polese2016
+Warning--there's a number but no volume in Shalizi2009
 Warning--empty journal in Wei2012a
 Warning--empty journal in Wei2012
-You've used 28 entries,
+You've used 32 entries,
             2543 wiz_defined-function locations,
-            733 strings with 9858 characters,
-and the built_in function-call counts, 11906 in all, are:
-= -- 1196
-> -- 620
-< -- 16
-+ -- 221
-- -- 219
-* -- 878
-:= -- 1961
-add.period$ -- 82
-call.type$ -- 28
-change.case$ -- 190
-chr.to.int$ -- 26
-cite$ -- 41
-duplicate$ -- 452
-empty$ -- 782
-format.name$ -- 252
-if$ -- 2393
+            763 strings with 10545 characters,
+and the built_in function-call counts, 13512 in all, are:
+= -- 1355
+> -- 692
+< -- 20
++ -- 246
+- -- 244
+* -- 989
+:= -- 2213
+add.period$ -- 93
+call.type$ -- 32
+change.case$ -- 214
+chr.to.int$ -- 30
+cite$ -- 47
+duplicate$ -- 518
+empty$ -- 899
+format.name$ -- 283
+if$ -- 2724
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 27
-newline$ -- 142
-num.names$ -- 84
-pop$ -- 181
+missing$ -- 31
+newline$ -- 161
+num.names$ -- 96
+pop$ -- 212
 preamble$ -- 1
-purify$ -- 219
+purify$ -- 248
 quote$ -- 0
-skip$ -- 409
+skip$ -- 469
 stack$ -- 0
-substring$ -- 646
-swap$ -- 82
-text.length$ -- 16
-text.prefix$ -- 8
+substring$ -- 736
+swap$ -- 98
+text.length$ -- 20
+text.prefix$ -- 10
 top$ -- 0
-type$ -- 220
-warning$ -- 13
-while$ -- 122
-width$ -- 30
-write$ -- 346
-(There were 23 error messages)
+type$ -- 248
+warning$ -- 15
+while$ -- 137
+width$ -- 34
+write$ -- 394
+(There were 25 error messages)

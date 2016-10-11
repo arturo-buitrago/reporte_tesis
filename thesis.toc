@@ -2,23 +2,28 @@
 \select@language {german}
 \select@language {USenglish}
 \contentsline {chapter}{Contents}{5}
-\contentsline {chapter}{\numberline {1}Introduction}{6}
-\contentsline {chapter}{\numberline {2}Background}{8}
-\contentsline {section}{\numberline {2.1}Random Access and its Limitations}{8}
-\contentsline {section}{\numberline {2.2}D2D}{9}
-\contentsline {section}{\numberline {2.3}Clustering}{10}
-\contentsline {chapter}{\numberline {3}Implementation}{12}
-\contentsline {section}{\numberline {3.1}Generation and distribution of UEs}{12}
-\contentsline {section}{\numberline {3.2}Path loss (attenuation)}{13}
-\contentsline {subsection}{\numberline {3.2.1}Manhattan grid}{14}
-\contentsline {subsection}{\numberline {3.2.2}Line-of-sight}{15}
-\contentsline {subsection}{\numberline {3.2.3}Non-line-of-sight}{16}
-\contentsline {section}{\numberline {3.3}Shadow fading}{18}
-\contentsline {section}{\numberline {3.4}Random access procedure and interference}{20}
-\contentsline {section}{\numberline {3.5}Clustering Algorithms}{22}
-\contentsline {chapter}{\numberline {4}Conclusions and Outlook}{23}
-\contentsline {chapter}{\numberline {A}}{24}
-\contentsline {chapter}{\numberline {B}Notation und Abk\IeC {\"u}rzungen}{25}
-\contentsline {chapter}{List of Figures}{27}
-\contentsline {chapter}{List of Tables}{28}
-\contentsline {chapter}{Bibliography}{29}
+\contentsline {chapter}{\numberline {1}Introduction}{7}
+\contentsline {chapter}{\numberline {2}Background}{9}
+\contentsline {section}{\numberline {2.1}Random Access and its Limitations}{9}
+\contentsline {section}{\numberline {2.2}D2D}{10}
+\contentsline {section}{\numberline {2.3}Clustering}{11}
+\contentsline {chapter}{\numberline {3}Implementation}{13}
+\contentsline {section}{\numberline {3.1}Generation and distribution of UEs}{13}
+\contentsline {section}{\numberline {3.2}Path loss (attenuation)}{15}
+\contentsline {subsection}{\numberline {3.2.1}Manhattan grid}{15}
+\contentsline {subsection}{\numberline {3.2.2}Line-of-sight}{17}
+\contentsline {subsection}{\numberline {3.2.3}Non-line-of-sight}{17}
+\contentsline {section}{\numberline {3.3}Shadow fading}{19}
+\contentsline {section}{\numberline {3.4}Random access procedure and interference}{21}
+\contentsline {section}{\numberline {3.5}Clustering Algorithms}{23}
+\contentsline {subsection}{\numberline {3.5.1}LEACH}{24}
+\contentsline {subsection}{\numberline {3.5.2}Complete-Link Clustering}{25}
+\contentsline {subsection}{\numberline {3.5.3}Ward's Method}{25}
+\contentsline {chapter}{\numberline {4}Results}{27}
+\contentsline {section}{\numberline {4.1}LEACH}{27}
+\contentsline {chapter}{\numberline {5}Conclusions and Outlook}{28}
+\contentsline {chapter}{\numberline {A}}{29}
+\contentsline {chapter}{\numberline {B}Notation und Abk\IeC {\"u}rzungen}{30}
+\contentsline {chapter}{List of Figures}{32}
+\contentsline {chapter}{List of Tables}{33}
+\contentsline {chapter}{Bibliography}{34}

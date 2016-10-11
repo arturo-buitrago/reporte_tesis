@@ -1,8 +1,8 @@
 \chapter{Implementation} \label{Implementation}
 
-Pequeno rundown de como vamos a estar haciendo las varas.
+As mentioned in the preceding chapters, the development of the simulation environment was as much a goal of this thesis as any; we seek to lay the groundwork for further investigation in this field with a credible system that reproduces faithfully the conditions found in a dense, urban environment with many devices capable of accessing the network. Ideally, the work presented here will be refined and will continue to be used on investigations in this area.
 
-For the creation of such a testing environment, four elements were recognized as of utmost importance to the validity of the tests and the author sought to implement them accordingly. In the following, they will be presented with detail, justifying the sources of the models and the parameter choices made.
+For the creation of such a testing environment, five elements were recognized as of utmost importance to the validity of the tests and the author sought to implement them accordingly. In the following, they will be presented with detail, justifying the sources of the models and the parameter choices made.
 
 The aforementioned elements are:
 
@@ -13,6 +13,8 @@ The aforementioned elements are:
 	\item Random access procedure and interference %\ref{RAP}
   \item Clustering algorithms
 \end{itemize}
+
+The actual simulations, as well as the measures used to quantify the relative performance of each algorithm are presented in chapter \ref{Results}.
 
 \section{Generation and distribution of UEs} \label{PPP}
 Often called a ``completely'' random process, a Poisson process is a process where every event is stochastically independent of all other points in it, see \cite{Keeler2016}. This generation process is common in investigations about the performance of networks, as eloquently expressed by \cite{Keeler} In our case, the Poisson-distributed random variable are the number of points in the bounded region we are investigating. The distribution is described by the following probability mass function:
@@ -45,7 +47,7 @@ When calculating the attenuation for a given path between two devices, there eme
 \subsection{Manhattan grid} \label{mh_grid}
 In order to determine whether a given link is a LOS or NLOS link, we need information about the obstacles present in the path between the two. In our case, we don't consider objects like cars and people explicitly, but rather account for all such minor objects and reflections they might create with a stochastic model (see \ref{SF}). Buildings, on the other hand, represent such massive, nigh-impenetrable objects that we must contemplate them concretely.
 
-The preferred method mentioned in the METIS deliverables is the use of a ``Manhattan-like'' grid, meaning a city-layout comprised of rectangular blocks criss-crossed by wide streets. To determine both the size and the overall layout of our Manhattan Grid, we again turn to the extensive work done by METIS. The measurements with which their relevant models were tested were run in Madrid, with a grid of around 500 meters of both length and width. We homogenized the scenario by having exclusively square blocks, but maintained both the street width and the general dimensions.
+The preferred method mentioned in the METIS deliverables is the use of a ``Manhattan-like'' grid, meaning a city-layout comprised of rectangular blocks criss-crossed by wide streets. To determine both the size and the overall layout of our Manhattan Grid, we again turn to the extensive work done by METIS. The measurements with which their relevant models were tested were run in Madrid, with a grid of around 500 meters of both length and width. We homogenized the scenario by having exclusively square blocks, but maintained both the street width and the general dimensions. We also fixed the position of the eNodeB exactly at the middle of the grid for those clustering algorithms that needed its position.
 
 
 \begin{table}[htbp]
@@ -61,6 +63,8 @@ The preferred method mentioned in the METIS deliverables is the use of a ``Manha
  Block Length & 110 m \\
  \hline
  Street Width & 20 m \\
+ \hline
+ eNB position & (250\,\text{m},\,250\,\text{m})\\
  \hline
 \end{tabular}
 \end{center}
@@ -93,27 +97,27 @@ With a Manhattan-like layout at the ready, questions about whether a link has LO
 \subsection{Line-of-sight} \label{LOS}
 The overall model for pathloss used by \cite{Raschkowski} is derived specifically from the one presented in \cite{ReportITU-RM.2135-12009} by the ITU (International Telecommunication Union) and covers a wide frequency range (0.8 to 60 GHz). Distances between 10 and 500 meters are thus defined by two distinct equations, depending on whether the distance between the two points is greater than a certain ``breakpoint distance''. The distance $d^\prime_{BP}$ in question is defined by
 \begin{equation} \label{eq:dbp}
-d^\prime_{BP} = 0.87\, \exp\bigg( -\frac {log_{10} \big( \frac {f_c} {1GHz} \big)} {0.65} \,\bigg)\,\frac{4\,h^\prime_{BS}h^\prime_{UE}}{\lambda_{WL}}\,,
+d^\prime_{BP} = 0.87\, \exp\bigg( -\frac {log_{10} \big( \frac {f_c} {1\,\text{GHz}} \big)} {0.65} \,\bigg)\,\frac{4\,h^\prime_{BS}h^\prime_{UE}}{\lambda_{WL}}\,,
 \end{equation}
 with $h^\prime_{BS}$ as the effective height of the Base Station and $h^\prime_{UE}$ the effective height of the UE, with ``effective" denoting adjusting for environment height $h_e$. The $\lambda_{WL}$ is the wavelength of the signal, which is calculated from the center frequency $f_c$ and the speed of light $c$. It must be mentioned that for our transmissions, the height of both the origin and destination device will be identical more often than not, due to cluster connections being D2D links.
 
 An additional ``pathloss offset'' $PL_1$ is defined in order to bring the model in agreement with the control measurements performed by METIS and is designed to account for elements like multipath fading.
 
 \begin{equation} \label{eq:PL_1}
-PL_{1|dB} = -1.38\,\log_{10}\,\bigg( \frac {f_c}{1Ghz} \bigg) + 3.34
+PL_{1|dB} = -1.38\,\log_{10}\,\bigg( \frac {f_c}{1\,\text{Ghz}} \bigg) + 3.34
 \end{equation}
 
 
 The actual pathloss equations are given as a function of distance $d$ by
 
 \begin{equation} \label{eq:PL_LOS_1}
-  PL_{LOS}(d)_{|dB} = 10\,n_1\,\log_{10}\bigg( \frac{d}{1m} \bigg) + 28.0 + 20 \log_{10} \bigg( \frac{f_c}{1GHz} \bigg) + PL_{1|dB}
+  PL_{LOS}(d)_{|dB} = 10\,n_1\,\log_{10}\bigg( \frac{d}{1\,\text{m}} \bigg) + 28.0 + 20 \log_{10} \bigg( \frac{f_c}{1\,\text{GHz}} \bigg) + PL_{1|dB}
 \end{equation}
-for $10\,m\,<\,d\, \le \,d^\prime_{BP}$ and
+for $10\,\text{m}\,<\,d\, \le \,d^\prime_{BP}$ and
 \begin{equation} \label{eq:PL_LOS_2}
   PL_{LOS}(d)_{|dB} = 10\,n_2\,\log_{10}\bigg( \frac{d}{d^\prime_{BP}} \bigg) + PL_{LOS}(d^\prime_{BP})_{|dB}
 \end{equation}
-for $d^\prime_{BP}\,<\,d\, \le \,500 m$ (compare with \cite{Raschkowski}). The parameters $n_1 = 2.2$ and $n_2 = 4.0$ are the power decay constant on both sides of the break point distance.
+for $d^\prime_{BP}\,<\,d\, \le \,500\,\text{m}$ (compare with \cite{Raschkowski}). The parameters $n_1 = 2.2$ and $n_2 = 4.0$ are the power decay constant on both sides of the break point distance.
 
 \subsection{Non-line-of-sight} \label{NLOS}
 Most of the connections available to a given UE will be NLOS links. These happen whenever the UE tries to communicate with a device that is not on its same street and thus the signal has to travel a more convoluted way in order to be received. METIS defers explicitly to the final channel models, created by WINNER+ (Wireless World Initiative New Radio+) in \cite{Heino2010}. WINNER+ is a private consortium looking to further develop the IMT-A (International Mobile Telecommunications-Advanced) standards. 
@@ -143,8 +147,8 @@ Thus, the formula for pathloss in the studied case is presented in \cite{Raschko
 %\begin{equation} \label{eq:NLOS}
 \begin{equation} \label{eq:NLOS}
 \begin{split}
-  PL_{NLOS}(d_1,d_2)_{|dB} = & \,PL_{LOS}(d_1)_{|dB} + 17.9 - 12.5\,n_j \\
-  & + 10\,n_j\,\log_{10} \bigg( \frac {d_2} {1 m} \bigg) + 3 \log_{10} \bigg( \frac { f_c } { 1 GHz } \bigg) + PL_{1|dB},
+  PL_{NLOS}(d_1,d_2)_{|\text{dB}} = & \,PL_{LOS}(d_1)_{|\text{dB}} + 17.9 - 12.5\,n_j \\
+  & + 10\,n_j\,\log_{10} \bigg( \frac {d_2} {1 \text{m}} \bigg) + 3 \log_{10} \bigg( \frac { f_c } { 1 \text{GHz} } \bigg) + PL_{1|\text{dB}},
 \end{split}
 \end{equation}
 where $n_j$ is a power decay constant calculated as
@@ -294,9 +298,56 @@ Readers can find a summary of all used parameters for this stage on table \ref{t
 
 The last piece of the puzzle is, of course, the actual mapping of UEs to cluster heads. These are fed into the random access and interference simulation by the clustering algorithms.
 
-\section{Clustering Algorithms}
+\section{Clustering Algorithms} \label{ClusteringAlgs}
 Clustering algorithms determine which UEs will be connected to which cluster heads, as well as which UEs will turn into cluster heads in the first place. Because of the nature of our research (regarding D2D communication), we eschewed any schemes that required dedicated gateways into the networks. In the definition of the scope of this work, we also decided to leave out any algorithms with multi-hop possibilities, simply due to the sheer complexity that would have represented. Algorithms presented here thus feature only one aggregation stage at the cluster head, which then forwards the data to the eNB.
 
-Most of the work done in clustering algorithms for wireless networks comes from the area of Wireless Sensor Networks (WSN), where large amounts of sensor nodes form a network communicating with a central unit of control. These types of structures lend themselves especially to grouping and aggregation, considering especially that there is often a lot of redundancy in the collected data. Energy efficiency and resilience of networks is often of paramount importance, in an attempt to minimize maintenance overhead. There have been several studies about clustering algorithms in this area, such as \cite{Jiang2009} or \cite{Afsar2014}. 
+Most of the work done in clustering algorithms for wireless networks comes from the area of Wireless Sensor Networks (WSN), where large amounts of sensor nodes form a network communicating with a central unit of control. These types of structures lend themselves especially to grouping and aggregation, considering especially that there is often a lot of redundancy in the collected data. Energy efficiency and resilience of networks is often of paramount importance, in an attempt to minimize maintenance overhead. There have been several studies about clustering algorithms in this area, such as \cite{Jiang2009} or \cite{Afsar2014}. Looking toward WSNs seems like the closest logical step when considering D2D communications, but an effort was also made to look at algorithms not native to WSNs.
 
-Looking toward WSNs seems like the closest logical step when considering D2D communications, but an effort was also made to look at algorithms not native to WSNs.
+Additionally to WSN algorithms we included schemes normally used in statistical data analysis, specifically a couple of hierarchical clustering schemes. These often feature a progressive merging of clusters depending on a variety of criteria; distance is often used when determining the level of kinship two points or clusters possess. When possible, we have tried instead to use measures relevant to our research area, such as Signal-to-Noise Ratio (SNR) and Signal-to-Interference-and-Noise Ratio (SINR) to quantify connectivity. 
+
+\subsection{LEACH} \label{LEACH}
+One of the most influential clustering algorithms in WSNs is LEACH (Low-Energy Adaptive Clustering Hierarchy), presented in \cite{Heinzelman2000}. Despite its relative age, it promised ``localized coordination to enable scalability and robustness for dynamic networks'' and was designed to lower the amount of information transmitted to the base station. As can be seen in \cite{Afsar2014}, it has spawned many other algorithms based on its simple premises. 
+
+LEACH works by randomly assigning its nodes as cluster heads according to a certain formula intended to yield a desired percentage $P_{LEACH}$ of CHs. Each node generates a uniformly distributed number between 0 and 1 and compares it to a threshold value $T(n)$. If the generated number is over that threshold it is designated to function as a cluster head.
+
+Once cluster heads have been assigned for the whole of the network, an advertisement is broadcast, announcing to the other UEs which cluster heads are available. UEs then take the received signal strength as a proxy for distance and elect the nearest to their location. We simulate this behavior by creating a link to the received signal with the highest SNR. Signal must exceed an SNR of 0 to even be considered for a potential link, in order to ensure the advertisement is distinguishable from the noise. 
+
+LEACH is designed to work with several rounds of CH assignment and data transfer in order to rotate the burden of CH selection, assuming a fixed set of nodes for a relatively long period of time. Seeing how our scenario is short-lived and features ideally mobile nodes, as well as a highly mutable network layout, we eschew the round structure. Consequently, the resulting  formula for the generation of the threshold value $T(n)$ can be seen in equation \ref{eq:LEACH}
+
+\begin{equation}\label{eq:LEACH}
+T(n) = \frac {P_{LEACH}}{1-P_{LEACH}\,(\text{mod}\,\frac {1}{P_{LEACH}})}
+\end{equation}
+
+Having observed just how many other clustering schemes it inspired, we decided to give LEACH particular importance in our testing, running simulations for it with a wider range of point densities $\lambda$, as well as more fine-grained data points.
+
+\subsection{Complete-Link Clustering}
+Also known as ``farthest neighbor clustering'', Complete-Linkage Clustering ``[t]ends to find compact clusters with equal diameters'' (\cite{Everitt2011}). It does so by defining the distance between two clusters as the maximum distance between their members, see equation \ref{eq:CLC}, from \cite{Shalizi2009}. 
+
+\begin{equation}\label{eq:CLC}
+d(A,B) = \min_{\vec{x} \in A,\,\vec{y} \in B} ||\vec{x}  - \vec{y}||
+\end{equation}
+
+
+Instead of using euclidean distance, as is the norm, we instead define the distance between two points as the SNR between them. Note that this ``reverses'' the algorithm's logic, meaning that instead of finding the minimum distance among all maximum distances in a cluster for a merge, we find the maximum SNR among all minimum SNRs inside a cluster. The algorithm then takes two clusters with the smallest such SNR ``distance'' and merges them.  Normally, it would continue to do so until there are no more clusters to merge, i.e. there only remains one cluster containing all the points in the set. In order to avoid this, with every potential merge of two clusters, we check if the potential D2D link is over a certain threshold. For this threshold we chose the same threshold introduced in section \ref{RAP}, $10 \text{dB}$. When no further links under that level are possible, the algorithms stops.
+
+In this type of scheme, the election of the cluster head seems almost arbitrary. In order to maintain verisimilitude of the simulation, we designate the closest UE in terms of SNR to the eNB (position given in section \ref{mh_grid}) as the cluster head.
+
+
+\subsection{Ward's Method}
+Originally formulated as an approach in 1963, in \cite{Ward1963}, Ward's method provides an interesting cost metric for the merging of two clusters. As stated more succinctly in \cite{Shalizi2009}, the method ``says that the distance between two clusters, A and B, is how much the sum of squares will increase when we merge them''. Ward formulates a merging cost $\Delta(A,B)$ based on the the distance between the geographical center of each cluster and utilizes this information to merge the two clusters with the lowest cost:
+
+\begin{equation}\label{eq:wards_cost}
+\Delta(A,B) = \frac {n_A\,n_B}{n_A + n_B}\,||\vec{m_A} - \vec{m_B}||^2\,,
+\end{equation}
+with $n_A$ and $n_B$ the number of points in the cluster and $\vec{m_A}$ and $\vec{m_B}$ the center of clusters A and B. 
+
+Here again, a limit must be provided for the algorithm not to form a single gigantic cluster; we continue using the D2D communication threshold $10 \text{dB}$. When the algorithm detects that there are no further connections possible over the given limit, it stops. A simple implementation of the algorithm can be observed in figure \ref{fig:ward_math}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.4\linewidth]{figures/ward_math}
+\caption{Sample clustering as a result of Ward's Method \cite{Shalizi2009}}
+\label{fig:ward_math}
+\end{figure}
+
+As with Complete-Link clustering, we assign a cluster head posterior to the creation of the cluster by designating the UE with the minimum SNR to the designated base station.

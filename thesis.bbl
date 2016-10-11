@@ -35,6 +35,11 @@ Christopher Cox.
   Communicatios}}.
 \newblock 2012.
 
+\bibitem[ELLS11]{Everitt2011}
+Brian~S. Everitt, Sabine Landau, Morven Leese, and Daniel Stahl.
+\newblock {\em {Cluster Analysis}}, volume~14.
+\newblock 2011.
+
 \bibitem[EMIA13]{Erturk2013}
 M~Cenk Erturk, Sayandev Mukherjee, Hiroyuki Ishii, and Huseyin Arslan.
 \newblock {Distributions of transmit power and SINR in device-to-device
@@ -46,6 +51,13 @@ Ingo Forkel, Marc Schinnenburg, and Markus Ang.
 \newblock {Generation of two-dimensional correlated shadowing for mobile radio
   network simulation}.
 \newblock {\em WPMC, sep}, (February):10--14, 2004.
+
+\bibitem[HCB00]{Heinzelman2000}
+Wendi~Rabiner Heinzelman, Anantha Chandrakasan, and Hari Balakrishnan.
+\newblock {Energy-efficient communication protocol for wireless microsensor
+  networks [LEACH]}.
+\newblock {\em Proceedings of the 33rd Annual Hawaii International Conference
+  on System Sciences}, pages 3005--3014, 2000.
 
 \bibitem[HSK{\etalchar{+}}10]{Heino2010}
 Petteri Heino, Essi Suikkanen, Esa Kunnari, Juha Meinil{\"{a}}, Pekka
@@ -148,6 +160,11 @@ Andre Riker, Eduardo Cerqueira, Marilia Curado, and Edmundo Monteiro.
   IMTadvanced}.
 \newblock {\em Evaluation}, 93(3), 2009.
 
+\bibitem[Sha09]{Shalizi2009}
+Cosma Shalizi.
+\newblock {Distances between Clustering , Hierarchical Clustering}.
+\newblock {\em Data Mining}, (September):36--350, 2009.
+
 \bibitem[SOIJ15]{Shariatmadari2015}
 H~Shariatmadari, P~Osti, S~Iraji, and R~J{\"{a}}ntti.
 \newblock {Data Aggregation in Capillary Networks for Machine-to-Machine
@@ -155,6 +172,10 @@ H~Shariatmadari, P~Osti, S~Iraji, and R~J{\"{a}}ntti.
 \newblock {\em Proc. IEEE Personal, Indoor and Mobile Radio Communications
   (PIMRC) – Workshop on M2M Communications: Challenges, Solutions and
   Applications}, pages 1100--1105, 2015.
+
+\bibitem[War63]{Ward1963}
+Joe~H. Ward.
+\newblock {Hierarchical grouping to optimize an objective function}, 1963.
 
 \bibitem[WHS12a]{Wei2012a}
 Shih-en Wei, Hung-yun Hsieh, and Hsuan-jung Su.

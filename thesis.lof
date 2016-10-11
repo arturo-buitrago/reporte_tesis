@@ -3,14 +3,16 @@
 \select@language {USenglish}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Detail of the Random Access Procedure, \cite {Cox2012}\relax }}{8}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of D2D Clustering in a network \cite {Wang2013}\relax }}{11}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Detail of the Random Access Procedure, \cite {Cox2012}\relax }}{9}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of D2D Clustering in a network \cite {Wang2013}\relax }}{12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of a PPP with $\lambda = 200$\relax }}{13}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparison between two Manhattan Grids\relax }}{15}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Calculation of NLOS path\relax }}{17}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Visualization of NLOS path with intersection acting as relay node\relax }}{18}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Shadow Fading values before and after correlation adjustment\relax }}{19}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of a PPP with $\lambda = 200$\relax }}{14}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparison between two Manhattan Grids\relax }}{16}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Calculation of NLOS path\relax }}{18}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Visualization of NLOS path with intersection acting as relay node\relax }}{19}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Shadow Fading values before and after correlation adjustment\relax }}{20}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Sample clustering as a result of Ward's Method \cite {Shalizi2009}\relax }}{26}
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
