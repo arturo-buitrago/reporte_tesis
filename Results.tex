@@ -1,8 +1,45 @@
 \chapter{Results} \label{Results}
 
-EXPLANATION FOR THE DIFFERENT MEASURES USED GOES HERE!
+\section{Testing methodology}
+The central element that testing will be looking at is how the chosen clustering algorithms behave under varying degrees of mean UE density $\lambda$. In the case of LEACH, due to CH selection probability $P_{LEACH}$ also being a relevant parameter, we will also test for a range of values. 
+
+Regarding the metrics used for comparison of adequacy of the different clustering schemes, we managed to narrow them down to four criteria:
+
+\begin{itemize}
+\item Percentage of UEs connecting to eNB
+\item Mean channel utilization rate
+\item Resource efficiency
+\item UE drop ratio
+\end{itemize}
+
+In the following, we will shortly justify and explain each metric.
+
+\subsection{Percentage of UEs connecting to eNB}
+One of the original motivations behind the expansion of LTE-A through D2D proximity services is the alleviation of the load experienced by the available infrastructure with large numbers of devices. By measuring the percentage of UEs connecting directly to the eNB, we seek to quantify to what extent the given algorithm is actually reducing the traffic at the eNB.
+
+We denote as $P_{UE\rightarrow eNB}$ and define it as
+\begin{equation}\label{eq:con_eNB}
+P_{UE\rightarrow eNB} = \frac {\text{UEs without cluster assignment}}{\text{Total UEs in grid}}\,,
+\end{equation}
+with UEs without cluster assignment meaning those that are neither transmitting to a cluster head nor are one themselves.
+
+It is important to note here that this measure, as with all presented in this work, is not unambiguous. A very small $P_{UE\rightarrow eNB}$ may look good from the point of view of the amount of connections at the eNB, but it may belie overly large clusters that only transfer the overload problem from the base station to the individual cluster heads.
+
+\subsection{Mean channel utilization rate}
+Throughput is often used in communication networks as a measure of the amount of data being transmitted in a given time frame. 
+
+MEASURED @ CH
+
+
+The definition given here for mean channel utilization rate was proposed by this work's supervisor and is defined as
+\begin{equation}\label{eq:TP}
+\varrho = \frac{N_{successes}}{m\cdot N_{slots}}\,,
+\end{equation}
+
+W
+\subsection{Resource efficiency}
+\subsection{UE drop ratio}
 
 \section{LEACH}
-As stated in the previous chapter, LEACH was of particular interest to us due to the influence it had had on so many other clustering algorithms in the field of WSNs (see section \ref{LEACH}). The presence of not only the expected point density $\lambda$ but also the cluster head activation probability $P_{LEACH}$ raised many questions about how the network would react to changes in both. 
+As stated in the previous chapter, LEACH was of particular interest to us due to the influence it had had on so many other clustering algorithms in the field of WSNs (see section \ref{LEACH}), as well as the simplicity it presented. The presence of not only the expected point density $\lambda$ but also the cluster head activation probability $P_{LEACH}$ raised many questions about how the network would react to changes in both. 
 
-In order to investigate this, we decided that 

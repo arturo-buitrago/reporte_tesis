@@ -264,7 +264,7 @@ Readers can find a summary of all used parameters for this stage on table \ref{t
 
 \begin{table}[H]
 \begin{center}
- \begin{tabular}{||p{10cm}|p{2.5cm}||} 
+ \begin{tabular}{||p{10.5cm}|p{2.5cm}||} 
  \hline
  \textbf{Parameter} & \multicolumn{1}{|c||}{\textbf{Value}}\\
  \hline\hline
@@ -282,7 +282,7 @@ Readers can find a summary of all used parameters for this stage on table \ref{t
  \hline
  Number of total LTE-A preambles & \multicolumn{1}{|c||}{$64$} \\
  \hline
- Number of preambles available for D2D communication& \multicolumn{1}{|c||}{$6$}\\
+ Number of preambles available for D2D communication $m$& \multicolumn{1}{|c||}{$6$}\\
  \hline
  SINR threshold $SINR_{thr}$ & \multicolumn{1}{|c||}{$10\text{dB}$}\\
  \hline
@@ -303,7 +303,9 @@ Clustering algorithms determine which UEs will be connected to which cluster hea
 
 Most of the work done in clustering algorithms for wireless networks comes from the area of Wireless Sensor Networks (WSN), where large amounts of sensor nodes form a network communicating with a central unit of control. These types of structures lend themselves especially to grouping and aggregation, considering especially that there is often a lot of redundancy in the collected data. Energy efficiency and resilience of networks is often of paramount importance, in an attempt to minimize maintenance overhead. There have been several studies about clustering algorithms in this area, such as \cite{Jiang2009} or \cite{Afsar2014}. Looking toward WSNs seems like the closest logical step when considering D2D communications, but an effort was also made to look at algorithms not native to WSNs.
 
-Additionally to WSN algorithms we included schemes normally used in statistical data analysis, specifically a couple of hierarchical clustering schemes. These often feature a progressive merging of clusters depending on a variety of criteria; distance is often used when determining the level of kinship two points or clusters possess. When possible, we have tried instead to use measures relevant to our research area, such as Signal-to-Noise Ratio (SNR) and Signal-to-Interference-and-Noise Ratio (SINR) to quantify connectivity. 
+Additionally to WSN algorithms we included schemes normally used in statistical data analysis, specifically a couple of hierarchical clustering schemes. These feature a progressive merging of clusters depending on a variety of criteria; distance is often used when determining the level of kinship two points or clusters possess. Hierachical clustering is preferred over other types of schemes due to us working under the assumption that there is few information present in the system a priori. This assumption makes the necesary estimation of the final number of clusters (cf. \cite{Everitt2011}) exceedingly complicated; implementing advanced heuristics or other such techniques to overcome this was of no interest to us.
+
+When possible, we have tried instead to use measures relevant to our research area, such as Signal-to-Noise Ratio (SNR) and Signal-to-Interference-and-Noise Ratio (SINR) to quantify connectivity. 
 
 \subsection{LEACH} \label{LEACH}
 One of the most influential clustering algorithms in WSNs is LEACH (Low-Energy Adaptive Clustering Hierarchy), presented in \cite{Heinzelman2000}. Despite its relative age, it promised ``localized coordination to enable scalability and robustness for dynamic networks'' and was designed to lower the amount of information transmitted to the base station. As can be seen in \cite{Afsar2014}, it has spawned many other algorithms based on its simple premises. 
@@ -320,20 +322,29 @@ T(n) = \frac {P_{LEACH}}{1-P_{LEACH}\,(\text{mod}\,\frac {1}{P_{LEACH}})}
 
 Having observed just how many other clustering schemes it inspired, we decided to give LEACH particular importance in our testing, running simulations for it with a wider range of point densities $\lambda$, as well as more fine-grained data points.
 
-\subsection{Complete-Link Clustering}
+
+\subsection{Complete-Link Clustering}\label{CLC}
 Also known as ``farthest neighbor clustering'', Complete-Linkage Clustering ``[t]ends to find compact clusters with equal diameters'' (\cite{Everitt2011}). It does so by defining the distance between two clusters as the maximum distance between their members, see equation \ref{eq:CLC}, from \cite{Shalizi2009}. 
 
 \begin{equation}\label{eq:CLC}
-d(A,B) = \min_{\vec{x} \in A,\,\vec{y} \in B} ||\vec{x}  - \vec{y}||
+d(A,B) = \max_{\vec{x} \in A,\,\vec{y} \in B} ||\vec{x}  - \vec{y}||
 \end{equation}
 
 
-Instead of using euclidean distance, as is the norm, we instead define the distance between two points as the SNR between them. Note that this ``reverses'' the algorithm's logic, meaning that instead of finding the minimum distance among all maximum distances in a cluster for a merge, we find the maximum SNR among all minimum SNRs inside a cluster. The algorithm then takes two clusters with the smallest such SNR ``distance'' and merges them.  Normally, it would continue to do so until there are no more clusters to merge, i.e. there only remains one cluster containing all the points in the set. In order to avoid this, with every potential merge of two clusters, we check if the potential D2D link is over a certain threshold. For this threshold we chose the same threshold introduced in section \ref{RAP}, $10 \text{dB}$. When no further links under that level are possible, the algorithms stops.
+Instead of using euclidean distance, as is the norm, we instead define the distance between two points as the SNR between them. Note that this ``reverses'' the algorithm's logic, meaning that instead of finding the minimum distance among all maximum distances in a cluster for a merge, we find the maximum SNR among all minimum SNRs inside a cluster. The algorithm then takes two clusters with the smallest such SNR ``distance'' and merges them.  Normally, it would continue to do so until there are no more clusters to merge, i.e. there only remains one cluster containing all the points in the set. In order to avoid this, with every potential merge of two clusters, we check if the potential D2D link is over a certain threshold. For this threshold we chose the same threshold introduced in section \ref{RAP}, $10 \text{dB}$. When no further links under that level are possible, the algorithms stops. The fact that we are using only single-hop aggregation constrains our options quite starkly; a viable link must be possible to all members of the cluster.
 
 In this type of scheme, the election of the cluster head seems almost arbitrary. In order to maintain verisimilitude of the simulation, we designate the closest UE in terms of SNR to the eNB (position given in section \ref{mh_grid}) as the cluster head.
 
+\subsection{Single-Link Clustering}\label{SLC}
+The ``nearest neighbor technique'', second of the best-known hierarchichal algorithms and ``one of the simplest hierarchical clustering methods'' (\cite{Everitt2011}) defines the distance between two clusters as ``the minimum distance between their members'', see equation \ref{eq:SLC}. This means that only one link will define the proximity between two entities, regardless of the density of the points inside them.
 
-\subsection{Ward's Method}
+\begin{equation}\label{eq:SLC}
+d(A,B) = \min_{\vec{x} \in A,\,\vec{y} \in B} ||\vec{x}  - \vec{y}||
+\end{equation}
+
+Here, too, we redefine the distance between to points as the SNR between the two. We also set an identical limit to the one used in Complete-Link Clustering (see above, section \ref{CLC}) in order to stop the simulation when appropriate
+
+\subsection{Ward's Method}\label{WM}
 Originally formulated as an approach in 1963, in \cite{Ward1963}, Ward's method provides an interesting cost metric for the merging of two clusters. As stated more succinctly in \cite{Shalizi2009}, the method ``says that the distance between two clusters, A and B, is how much the sum of squares will increase when we merge them''. Ward formulates a merging cost $\Delta(A,B)$ based on the the distance between the geographical center of each cluster and utilizes this information to merge the two clusters with the lowest cost:
 
 \begin{equation}\label{eq:wards_cost}
