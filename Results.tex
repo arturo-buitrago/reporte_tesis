@@ -288,7 +288,7 @@ Regarding figure \ref{fig:SINGLELINES_8} and the \textbf{mean channel utilizatio
 
 \textbf{Total resource efficiency} (figure \ref{fig:SINGLELINES_9}) also exhibits a remarkably close behavior to that of LEACH. We will compare them directly in section \ref{Comparison} to disentangle the differences between both.
 
-The \textbf{mean UE drop ratio $\overline{\theta}_{drops}$} plots of figure \ref{fig:SINGLELINES_10} TERMINAR
+The \textbf{mean UE drop ratio $\overline{\theta}_{drops}$} plots of figure \ref{fig:SINGLELINES_10} show interesting behavior: while initially presenting low values of $\overline{\theta}_{drops}$ at lower $P_{SINGLE}$, it reverses slowly so that by the higher values of $\lambda$, it is the lower end of the spectrum of $P_{SINGLE}$ that present the highest ratio of drops. This contradicts to our previous observations about this metric, at least in lower values of $\lambda$. Here it seems that the constraint of an exact number of clusters to be formed hampers the quality of the D2D links being formed in less dense scenarios. In these cases, a number of devices would be better off transmitting directly through the cellular network instead of being forced into a nearby cluster. In scenarios with a larger number of UEs present, the usual trend takes hold as better link opportunities exist.
 
 \subsection{Ward's Method} \label{description:WARD}
 
@@ -470,8 +470,8 @@ The difference can be explained by the way the clusters are formed: while LEACH 
 
 Ward's curve predictably splutters off, \textit{inconsequentially} (c.f. section \ref{description:WARD}).
 
-\subsection{Summary}
+\section{Summary}
 
-All in all, it is clear that Single-Linkage clustering provides the best results according to the metrics used compared to the other algorithms studied. The fact that it is both easily scalable and a very well-studied and popular clustering algorithm (\cite{Everitt2011}) add to this notion. Despite this seemingly indisputable superiority, it must be said the the costs associated with the actual creation of the cluster structure are relatively high: the algorithm relies on global knowledge of the relative positions of all UEs to each other, which may not be given in a rapidly-changing mobile scenario. It is also relatively complex computationally, at $O(n^2)$ and necessitates a large amount of extra signaling from the network.
+All in all, it is clear that Single-Linkage clustering provides the best results according to the metrics used and compared to the other algorithms studied. The fact that it is both easily scalable and a very well-studied and popular clustering algorithm (\cite{Everitt2011}) add to this notion. Despite this seemingly indisputable superiority, it must be said the the costs associated with the actual creation of the cluster structure are relatively high: the algorithm relies on global knowledge of the relative positions of all UEs to each other, which may not be given in a rapidly-changing mobile scenario. It is also relatively complex computationally, at $O(n^2)$ and necessitates a large amount of extra signaling from the network.
 
 If these obstacles prove too high a hurdle, the data here shows that LEACH, despite its simplicity and its poorer performance in lower densities of both UEs and CHs, provides a great alternative to Single-Link. At higher values of $\lambda$ and $P_{LEACH}$, its conduct very much resembles that of the hierarchical algorithm, while still being possible to implement with relatively few overhead. Other clustering schemes presented here pale in comparison and should only be used in very specific circumstances.

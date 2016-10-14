@@ -101,10 +101,10 @@ d^\prime_{BP} = 0.87\, \exp\bigg( -\frac {log_{10} \big( \frac {f_c} {1\,\text{G
 \end{equation}
 with $h^\prime_{BS}$ as the effective height of the Base Station and $h^\prime_{UE}$ the effective height of the UE, with ``effective" denoting adjusting for environment height $h_e$. The $\lambda_{WL}$ is the wavelength of the signal, which is calculated from the center frequency $f_c$ and the speed of light $c$. It must be mentioned that for our transmissions, the height of both the origin and destination device will be identical more often than not, due to cluster connections being D2D links.
 
-An additional ``pathloss offset'' $PL_1$ is defined in order to bring the model in agreement with the control measurements performed by METIS and is designed to account for elements like multipath fading.
+An additional ``pathloss offset'' $PL_1$ is defined in order to bring the model in agreement with the control measurements performed by METIS and is designed to account for elements like multi-path fading.
 
 \begin{equation} \label{eq:PL_1}
-PL_{1|dB} = -1.38\,\log_{10}\,\bigg( \frac {f_c}{1\,\text{Ghz}} \bigg) + 3.34
+PL_{1|dB} = -1.38\,\log_{10}\,\bigg( \frac {f_c}{1\,\text{GHz}} \bigg) + 3.34
 \end{equation}
 
 
@@ -167,13 +167,13 @@ In a rectangular Manhattan grid such as ours, a only two intersections are neede
 \end{figure}
 
 \section{Shadow fading} \label{SF}
-As mentioned in \ref{mh_grid}, Shadow Fading - meaning the effects on the signal caused by smaller obstacles - as well as the reflections they create are modelled through a stochastic model. This type of fluctuation, called ``Shadow Fading'' or ``long-term fading'' is often realized through a Gaussian distribution in the logarithmic scale (also called a log-normal distribution), as asserted in \cite{Forkel2004} and shown below in its probability density function. In our case, we followed METIS specifications and set $\mu_{L_s} = 0$ and $\sigma_{L_s} = 7 \text{dB}$.
+As mentioned in \ref{mh_grid}, Shadow Fading - meaning the effects on the signal caused by smaller obstacles - as well as the reflections they create are modeled through a stochastic model. This type of fluctuation, called ``Shadow Fading'' or ``long-term fading'' is often realized through a Gaussian distribution in the logarithmic scale (also called a log-normal distribution), as asserted in \cite{Forkel2004} and shown below in its probability density function. In our case, we followed METIS specifications and set $\mu_{L_s} = 0$ and $\sigma_{L_s} = 7 \text{dB}$.
 
 \begin{equation} \label{eq:SF}
 p(L_s) = \frac{1}{{\sigma_{L_s} \sqrt {2\pi } }}\,\exp\bigg(-\frac{(L_s - \mu_{L_s})^2}{2\,\sigma_{L_s}^2}\bigg)
 \end{equation}
 
-While any given point is distributed randomly along the normal distribution, completely random and uncorrelated shadow fading variables make little sense when one considers that the effects of any given set of obstacles won't change much in the space of a couple of meters. In order to account for the necessary correlation that these shadow fading variables experience, a normalized autocorrelation function is introduced, both in \cite{Forkel2004} and \cite{Raschkowski}, with a decorrelation value suggested by METIS $d_{corr} = 8 m$.
+While any given point is distributed randomly along the normal distribution, completely random and uncorrelated shadow fading variables make little sense when one considers that the effects of any given set of obstacles won't change much in the space of a couple of meters. In order to account for the necessary correlation that these shadow fading variables experience, a normalized autocorrelation function is introduced, both in \cite{Forkel2004} and \cite{Raschkowski}, with a decorrelation value suggested by METIS $d_{corr} = 8 \text{m}$.
 
 \begin{equation} \label{eq:corr}
 R(\Delta x) = \exp\bigg(-\frac{|\Delta x|}{d_{corr}}\,\ln(2)\bigg)
@@ -238,7 +238,7 @@ Clustering algorithms determine which UEs will be connected to which cluster hea
 
 Most of the work done in clustering algorithms for wireless networks comes from the area of Wireless Sensor Networks (WSN), where large amounts of sensor nodes form a network communicating with a central unit of control. These types of structures lend themselves especially to grouping and aggregation, considering especially that there is often a lot of redundancy in the collected data. Energy efficiency and resilience of networks is often of paramount importance, in an attempt to minimize maintenance overhead. There have been several studies about clustering algorithms in this area, such as \cite{Jiang2009} or \cite{Afsar2014}. Unfortunately, the fundamentally different nature between static sensors and LTE-A capable devices severely limits the applicability of most schemes to our scenario.
 
-Additionally to a WSN algorithm we included schemes normally used in statistical data analysis, specifically a couple of hierarchical clustering schemes. These feature a progressive merging of clusters depending on a variety of criteria; distance is often used when determining the level of kinship two points or clusters possess. Hierachical clustering is preferred over other types of schemes due to us working under the assumption that there is few information present in the system a priori. This assumption makes the necesary estimation of the final number of clusters (cf. \cite{Everitt2011}) exceedingly complicated; implementing advanced heuristics or other such techniques to overcome this was of no interest to us.
+Additionally to a WSN algorithm we included schemes normally used in statistical data analysis, specifically a couple of hierarchical clustering schemes. These feature a progressive merging of clusters depending on a variety of criteria; distance is often used when determining the level of kinship two points or clusters possess. Hierarchical clustering is preferred over other types of schemes due to us working under the assumption that there is few information present in the system a priori. This assumption makes the necessary estimation of the final number of clusters (cf. \cite{Everitt2011}) exceedingly complicated; implementing advanced heuristics or other such techniques to overcome this was of no interest to us.
 
 When possible, we have tried instead to use measures relevant to our research area, such as Signal-to-Noise Ratio (SNR) and Signal-to-Interference-and-Noise Ratio (SINR) to quantify connectivity. 
 
@@ -271,7 +271,7 @@ Instead of using euclidean distance, as is the norm, we instead define the dista
 In this type of scheme, the election of the cluster head seems almost arbitrary. In order to maintain verisimilitude of the simulation, we designate the UE with the smallest average distance to all other UEs as the cluster head.
 
 \subsection{Single-Link Clustering}\label{SLC}
-The ``nearest neighbor technique'', second of the best-known hierarchichal algorithms and ``one of the simplest hierarchical clustering methods'' (\cite{Everitt2011}) defines the distance between two clusters as ``the minimum distance between their members'', see equation \ref{eq:SLC}. This means that only one link will define the proximity between two entities, regardless of the density of the points inside them.
+The ``nearest neighbor technique'', second of the best-known hierarchical algorithms and ``one of the simplest hierarchical clustering methods'' (\cite{Everitt2011}) defines the distance between two clusters as ``the minimum distance between their members'', see equation \ref{eq:SLC}. This means that only one link will define the proximity between two entities, regardless of the density of the points inside them.
 
 \begin{equation}\label{eq:SLC}
 d(A,B) = \min_{\vec{x} \in A,\,\vec{y} \in B} ||\vec{x}  - \vec{y}||

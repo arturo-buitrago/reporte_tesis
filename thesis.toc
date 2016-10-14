@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {4.4.2}Mean channel utilization rate}{41}
 \contentsline {subsection}{\numberline {4.4.3}Total resource efficiency}{42}
 \contentsline {subsection}{\numberline {4.4.4}Mean UE drop ratio}{43}
-\contentsline {subsection}{\numberline {4.4.5}Summary}{44}
+\contentsline {section}{\numberline {4.5}Summary}{44}
 \contentsline {chapter}{\numberline {5}Conclusions and Outlook}{45}
 \contentsline {chapter}{\numberline {A}Notation and Abbreviations}{47}
 \contentsline {chapter}{List of Figures}{49}
