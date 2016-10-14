@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.8)  14 OCT 2016 09:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.8)  14 OCT 2016 10:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,8 +581,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 ) (./thesis.aux
-(./Statements.aux) (./Introduction.aux) (./Background.aux) (./Evaluation.aux)
-(./Results.aux) (./Conclusions.aux) (./Abbreviations.aux))
+(./Statements.aux) (./Abstract.aux) (./Introduction.aux) (./Background.aux)
+(./Evaluation.aux) (./Results.aux) (./Conclusions.aux) (./Abbreviations.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
@@ -652,27 +652,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
 ) [2
 
-] (./thesis.toc [3
+]
+\openout2 = `Abstract.aux'.
+
+ (./Abstract.tex) [3
+
+
+] (./thesis.toc [4
 
 
 ])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [4]
+ [5]
 \openout2 = `Introduction.aux'.
 
  (./Introduction.tex
 Chapter 1.
-[5
+[6
 
 
-]) [6]
+]) [7]
 \openout2 = `Background.aux'.
 
  (./Background.tex
 Chapter 2.
-<figures/RACH_LAYA.png, id=30, 752.8125pt x 1086.0575pt>
+<figures/RACH_LAYA.png, id=34, 752.8125pt x 1086.0575pt>
 File: figures/RACH_LAYA.png Graphic file (type png)
 
 <use figures/RACH_LAYA.png>
@@ -682,11 +688,11 @@ Package pdftex.def Info: figures/RACH_LAYA.png used on input line 8.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7
+[8
 
 
 
-] [8 <./figures/RACH_LAYA.png>]
+] [9 <./figures/RACH_LAYA.png>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -694,30 +700,30 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
- [9]
-<figures/D2D_clustering.png, id=42, 1015.795pt x 637.38126pt>
+ [10]
+<figures/D2D_clustering.png, id=45, 1015.795pt x 637.38126pt>
 File: figures/D2D_clustering.png Graphic file (type png)
 
 <use figures/D2D_clustering.png>
 Package pdftex.def Info: figures/D2D_clustering.png used on input line 44.
 (pdftex.def)             Requested size: 253.94812pt x 159.34492pt.
-) [10 <./figures/D2D_clustering.png>]
+) [11 <./figures/D2D_clustering.png>]
 \openout2 = `Evaluation.aux'.
 
 
 (./Evaluation.tex
 Chapter 3.
-[11
+[12
 
 
 
-] <figures/PPP.pdf, id=49, 578.16pt x 433.62pt>
+] <figures/PPP.pdf, id=52, 578.16pt x 433.62pt>
 File: figures/PPP.pdf Graphic file (type pdf)
  <use figures/PPP.pdf>
 Package pdftex.def Info: figures/PPP.pdf used on input line 30.
 (pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
 
-[12 <./figures/PPP.pdf>] [13] <figures/Madrid.png, id=83, 626.34pt x 778.91pt>
+[13 <./figures/PPP.pdf>] [14] <figures/Madrid.png, id=86, 626.34pt x 778.91pt>
 File: figures/Madrid.png Graphic file (type png)
 
 <use figures/Madrid.png>
@@ -728,7 +734,7 @@ Overfull \hbox (32.25055pt too wide) in paragraph at lines 80--81
  [][] 
  []
 
-<figures/mh_grid.pdf, id=84, 578.16pt x 433.62pt>
+<figures/mh_grid.pdf, id=87, 578.16pt x 433.62pt>
 File: figures/mh_grid.pdf Graphic file (type pdf)
  <use figures/mh_grid.pdf>
 Package pdftex.def Info: figures/mh_grid.pdf used on input line 86.
@@ -738,29 +744,29 @@ Overfull \hbox (17.36862pt too wide) in paragraph at lines 86--87
  [][] 
  []
 
-[14 <./figures/Madrid.png> <./figures/mh_grid.pdf>] [15]
-<figures/node_relay.pdf, id=133, 520.19344pt x 417.05812pt>
+[15 <./figures/Madrid.png> <./figures/mh_grid.pdf>] [16]
+<figures/node_relay.pdf, id=136, 520.19344pt x 417.05812pt>
 File: figures/node_relay.pdf Graphic file (type pdf)
 
 <use figures/node_relay.pdf>
 Package pdftex.def Info: figures/node_relay.pdf used on input line 131.
 (pdftex.def)             Requested size: 230.36061pt x 184.6898pt.
 
-<figures/d1_d2.png, id=134, 682.55pt x 556.0775pt>
+<figures/d1_d2.png, id=137, 682.55pt x 556.0775pt>
 File: figures/d1_d2.png Graphic file (type png)
  <use figures/d1_d2.png>
 Package pdftex.def Info: figures/d1_d2.png used on input line 137.
 (pdftex.def)             Requested size: 230.36061pt x 187.6723pt.
 
-[16 <./figures/node_relay.pdf> <./figures/d1_d2.png>]
-<figures/two_points.pdf, id=142, 578.16pt x 433.62pt>
+[17 <./figures/node_relay.pdf> <./figures/d1_d2.png>]
+<figures/two_points.pdf, id=145, 578.16pt x 433.62pt>
 File: figures/two_points.pdf Graphic file (type pdf)
 
 <use figures/two_points.pdf>
 Package pdftex.def Info: figures/two_points.pdf used on input line 164.
 (pdftex.def)             Requested size: 322.50345pt x 241.87277pt.
- [17 <./figures/two_points.pdf>]
-<figures/noise_before.pdf, id=185, 578.16pt x 433.62pt>
+ [18 <./figures/two_points.pdf>]
+<figures/noise_before.pdf, id=188, 578.16pt x 433.62pt>
 File: figures/noise_before.pdf Graphic file (type pdf)
 
 <use figures/noise_before.pdf>
@@ -771,7 +777,7 @@ Overfull \hbox (23.03746pt too wide) in paragraph at lines 189--190
  [][] 
  []
 
-<figures/noise_after.pdf, id=186, 578.16pt x 433.62pt>
+<figures/noise_after.pdf, id=189, 578.16pt x 433.62pt>
 File: figures/noise_after.pdf Graphic file (type pdf)
 
 <use figures/noise_after.pdf>
@@ -782,45 +788,45 @@ Overfull \hbox (23.03746pt too wide) in paragraph at lines 195--196
  [][] 
  []
 
-[18 <./figures/noise_before.pdf> <./figures/noise_after.pdf
+[19 <./figures/noise_before.pdf> <./figures/noise_after.pdf
 
 pdfTeX warning: pdflatex (file ./figures/noise_after.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] [19] [20] [21] [22] [23]
-<figures/ward_math.png, id=277, 481.8pt x 447.6725pt>
+>] [20] [21] [22] [23] [24]
+<figures/ward_math.png, id=280, 481.8pt x 447.6725pt>
 File: figures/ward_math.png Graphic file (type png)
 
 <use figures/ward_math.png>
 Package pdftex.def Info: figures/ward_math.png used on input line 300.
 (pdftex.def)             Requested size: 184.28568pt x 171.23076pt.
-) [24 <./figures/ward_math.png>]
+) [25 <./figures/ward_math.png>]
 \openout2 = `Results.aux'.
 
  (./Results.tex
 Chapter 4.
-[25
+[26
 
 
 
-] [26] [27] [28] <figures/LEACH_2.png, id=295, 462.528pt x 361.35pt>
+] [27] [28] [29] <figures/LEACH_2.png, id=298, 462.528pt x 361.35pt>
 File: figures/LEACH_2.png Graphic file (type png)
 
 <use figures/LEACH_2.png>
 Package pdftex.def Info: figures/LEACH_2.png used on input line 178.
 (pdftex.def)             Requested size: 230.36061pt x 179.9688pt.
- <figures/LEACH_8.png, id=297, 462.528pt x 361.35pt>
+ <figures/LEACH_8.png, id=300, 462.528pt x 361.35pt>
 File: figures/LEACH_8.png Graphic file (type png)
 
 <use figures/LEACH_8.png>
 Package pdftex.def Info: figures/LEACH_8.png used on input line 186.
 (pdftex.def)             Requested size: 230.36061pt x 179.9688pt.
- <figures/LEACH_9.png, id=298, 578.16pt x 433.62pt>
+ <figures/LEACH_9.png, id=301, 578.16pt x 433.62pt>
 File: figures/LEACH_9.png Graphic file (type png)
 
 <use figures/LEACH_9.png>
 Package pdftex.def Info: figures/LEACH_9.png used on input line 194.
 (pdftex.def)             Requested size: 230.36061pt x 172.77003pt.
- <figures/LEACH_10.png, id=299, 462.528pt x 361.35pt>
+ <figures/LEACH_10.png, id=302, 462.528pt x 361.35pt>
 File: figures/LEACH_10.png Graphic file (type png)
 
 <use figures/LEACH_10.png>
@@ -831,174 +837,176 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--205
 [][][]
  []
 
-<figures/LEACHLINES_2.png, id=300, 530.4618pt x 413.3844pt>
+<figures/LEACHLINES_2.png, id=303, 530.4618pt x 413.3844pt>
 File: figures/LEACHLINES_2.png Graphic file (type png)
 
 <use figures/LEACHLINES_2.png>
 Package pdftex.def Info: figures/LEACHLINES_2.png used on input line 214.
 (pdftex.def)             Requested size: 322.50345pt x 251.33148pt.
- [29] [30 <./figures/LEACH_2.png> <./figures/LEACH_8.png> <./figures/LEACH_9.pn
+ [30] [31 <./figures/LEACH_2.png> <./figures/LEACH_8.png> <./figures/LEACH_9.pn
 g> <./figures/LEACH_10.png>]
-<figures/LEACHLINES_8.png, id=311, 530.4618pt x 419.8887pt>
+<figures/LEACHLINES_8.png, id=315, 530.4618pt x 419.8887pt>
 File: figures/LEACHLINES_8.png Graphic file (type png)
 
 <use figures/LEACHLINES_8.png>
 Package pdftex.def Info: figures/LEACHLINES_8.png used on input line 238.
 (pdftex.def)             Requested size: 322.50345pt x 255.28601pt.
 
-<figures/LEACHLINES_9.png, id=312, 535.5207pt x 413.3844pt>
+<figures/LEACHLINES_9.png, id=316, 535.5207pt x 413.3844pt>
 File: figures/LEACHLINES_9.png Graphic file (type png)
 
 <use figures/LEACHLINES_9.png>
 Package pdftex.def Info: figures/LEACHLINES_9.png used on input line 250.
 (pdftex.def)             Requested size: 322.50345pt x 248.95348pt.
- [31 <./figures/LEACHLINES_2.png>] [32 <./figures/LEACHLINES_8.png> <./figures/
+ [32 <./figures/LEACHLINES_2.png>] [33 <./figures/LEACHLINES_8.png> <./figures/
 LEACHLINES_9.png>]
-<figures/LEACHLINES_10.png, id=323, 538.4115pt x 413.3844pt>
+<figures/LEACHLINES_10.png, id=326, 538.4115pt x 413.3844pt>
 File: figures/LEACHLINES_10.png Graphic file (type png)
 
 <use figures/LEACHLINES_10.png>
 Package pdftex.def Info: figures/LEACHLINES_10.png used on input line 262.
 (pdftex.def)             Requested size: 322.50345pt x 247.60992pt.
+ [34 <./figures/LEACHLINES_10.png>] [35
 
-<figures/COMPLETE_2.png, id=324, 532.6299pt x 419.8887pt>
+]
+<figures/COMPLETE_2.png, id=334, 532.6299pt x 419.8887pt>
 File: figures/COMPLETE_2.png Graphic file (type png)
 
 <use figures/COMPLETE_2.png>
-Package pdftex.def Info: figures/COMPLETE_2.png used on input line 274.
+Package pdftex.def Info: figures/COMPLETE_2.png used on input line 305.
 (pdftex.def)             Requested size: 230.36061pt x 181.59937pt.
 
-<figures/COMPLETE_8.png, id=325, 531.9072pt x 426.393pt>
+<figures/COMPLETE_8.png, id=335, 531.9072pt x 426.393pt>
 File: figures/COMPLETE_8.png Graphic file (type png)
 
 <use figures/COMPLETE_8.png>
-Package pdftex.def Info: figures/COMPLETE_8.png used on input line 282.
+Package pdftex.def Info: figures/COMPLETE_8.png used on input line 313.
 (pdftex.def)             Requested size: 230.36061pt x 184.66617pt.
 
-<figures/COMPLETE_9.png, id=326, 541.3023pt x 419.8887pt>
+<figures/COMPLETE_9.png, id=336, 541.3023pt x 419.8887pt>
 File: figures/COMPLETE_9.png Graphic file (type png)
 
 <use figures/COMPLETE_9.png>
-Package pdftex.def Info: figures/COMPLETE_9.png used on input line 290.
+Package pdftex.def Info: figures/COMPLETE_9.png used on input line 321.
 (pdftex.def)             Requested size: 230.36061pt x 178.6906pt.
 
-<figures/COMPLETE_10.png, id=327, 551.4201pt x 419.8887pt>
+<figures/COMPLETE_10.png, id=337, 551.4201pt x 419.8887pt>
 File: figures/COMPLETE_10.png Graphic file (type png)
 
 <use figures/COMPLETE_10.png>
-Package pdftex.def Info: figures/COMPLETE_10.png used on input line 297.
+Package pdftex.def Info: figures/COMPLETE_10.png used on input line 328.
 (pdftex.def)             Requested size: 230.36061pt x 175.41022pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--301
+Underfull \hbox (badness 10000) in paragraph at lines 302--332
 [][][]
  []
 
-[33 <./figures/LEACHLINES_10.png>] [34 <./figures/COMPLETE_2.png> <./figures/CO
-MPLETE_8.png> <./figures/COMPLETE_9.png> <./figures/COMPLETE_10.png>]
-<figures/SINGLELINES_2.png, id=339, 539.8569pt x 419.8887pt>
+[36] <figures/SINGLELINES_2.png, id=341, 539.8569pt x 419.8887pt>
 File: figures/SINGLELINES_2.png Graphic file (type png)
 
 <use figures/SINGLELINES_2.png>
-Package pdftex.def Info: figures/SINGLELINES_2.png used on input line 318.
+Package pdftex.def Info: figures/SINGLELINES_2.png used on input line 340.
 (pdftex.def)             Requested size: 230.36061pt x 179.17111pt.
 
-<figures/SINGLELINES_8.png, id=340, 531.9072pt x 426.393pt>
+<figures/SINGLELINES_8.png, id=342, 531.9072pt x 426.393pt>
 File: figures/SINGLELINES_8.png Graphic file (type png)
 
 <use figures/SINGLELINES_8.png>
-Package pdftex.def Info: figures/SINGLELINES_8.png used on input line 326.
+Package pdftex.def Info: figures/SINGLELINES_8.png used on input line 348.
 (pdftex.def)             Requested size: 230.36061pt x 184.66617pt.
 
-<figures/SINGLELINES_9.png, id=341, 536.2434pt x 419.8887pt>
+<figures/SINGLELINES_9.png, id=343, 536.2434pt x 419.8887pt>
 File: figures/SINGLELINES_9.png Graphic file (type png)
 
 <use figures/SINGLELINES_9.png>
-Package pdftex.def Info: figures/SINGLELINES_9.png used on input line 334.
+Package pdftex.def Info: figures/SINGLELINES_9.png used on input line 356.
 (pdftex.def)             Requested size: 230.36061pt x 180.37563pt.
 
-<figures/SINGLELINES_10.png, id=342, 531.9072pt x 419.8887pt>
+<figures/SINGLELINES_10.png, id=344, 543.4704pt x 419.8887pt>
 File: figures/SINGLELINES_10.png Graphic file (type png)
 
 <use figures/SINGLELINES_10.png>
-Package pdftex.def Info: figures/SINGLELINES_10.png used on input line 341.
-(pdftex.def)             Requested size: 230.36061pt x 181.84924pt.
+Package pdftex.def Info: figures/SINGLELINES_10.png used on input line 363.
+(pdftex.def)             Requested size: 230.36061pt x 177.973pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--345
+Underfull \hbox (badness 10000) in paragraph at lines 337--367
 [][][]
  []
 
-<figures/WARD_2.png, id=343, 532.6299pt x 419.8887pt>
+[37 <./figures/COMPLETE_2.png> <./figures/COMPLETE_8.png> <./figures/COMPLETE_9
+.png> <./figures/COMPLETE_10.png>]
+<figures/WARD_2.png, id=353, 532.6299pt x 419.8887pt>
 File: figures/WARD_2.png Graphic file (type png)
  <use figures/WARD_2.png>
-Package pdftex.def Info: figures/WARD_2.png used on input line 365.
+Package pdftex.def Info: figures/WARD_2.png used on input line 375.
 (pdftex.def)             Requested size: 230.36061pt x 181.59937pt.
 
-<figures/WARD_8.png, id=344, 531.9072pt x 426.393pt>
+<figures/WARD_8.png, id=354, 531.9072pt x 426.393pt>
 File: figures/WARD_8.png Graphic file (type png)
  <use figures/WARD_8.png>
-Package pdftex.def Info: figures/WARD_8.png used on input line 373.
+Package pdftex.def Info: figures/WARD_8.png used on input line 383.
 (pdftex.def)             Requested size: 230.36061pt x 184.66617pt.
 
-<figures/WARD_9.png, id=345, 533.3526pt x 419.8887pt>
+<figures/WARD_9.png, id=355, 533.3526pt x 419.8887pt>
 File: figures/WARD_9.png Graphic file (type png)
  <use figures/WARD_9.png>
-Package pdftex.def Info: figures/WARD_9.png used on input line 381.
+Package pdftex.def Info: figures/WARD_9.png used on input line 391.
 (pdftex.def)             Requested size: 230.36061pt x 181.3559pt.
 
-<figures/WARD_10.png, id=346, 551.4201pt x 419.8887pt>
+<figures/WARD_10.png, id=356, 551.4201pt x 419.8887pt>
 File: figures/WARD_10.png Graphic file (type png)
 
 <use figures/WARD_10.png>
-Package pdftex.def Info: figures/WARD_10.png used on input line 388.
+Package pdftex.def Info: figures/WARD_10.png used on input line 398.
 (pdftex.def)             Requested size: 230.36061pt x 175.41022pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--392
+Underfull \hbox (badness 10000) in paragraph at lines 372--402
 [][][]
  []
 
-[35] [36 <./figures/SINGLELINES_2.png> <./figures/SINGLELINES_8.png> <./figures
-/SINGLELINES_9.png> <./figures/SINGLELINES_10.png>] [37] [38 <./figures/WARD_2.
-png> <./figures/WARD_8.png> <./figures/WARD_9.png> <./figures/WARD_10.png>]
-<figures/COMPARE_2.png, id=368, 668.4975pt x 419.8887pt>
+[38 <./figures/SINGLELINES_2.png> <./figures/SINGLELINES_8.png> <./figures/SING
+LELINES_9.png> <./figures/SINGLELINES_10.png>] [39 <./figures/WARD_2.png> <./fi
+gures/WARD_8.png> <./figures/WARD_9.png> <./figures/WARD_10.png>]
+<figures/COMPARE_2.png, id=371, 668.4975pt x 419.8887pt>
 File: figures/COMPARE_2.png Graphic file (type png)
 
 <use figures/COMPARE_2.png>
-Package pdftex.def Info: figures/COMPARE_2.png used on input line 409.
+Package pdftex.def Info: figures/COMPARE_2.png used on input line 413.
 (pdftex.def)             Requested size: 460.72124pt x 289.39035pt.
- [39
+ [40
 
  <./figures/COMPARE_2.png>]
-<figures/COMPARE_8.png, id=373, 667.7748pt x 426.393pt>
+<figures/COMPARE_8.png, id=376, 667.7748pt x 426.393pt>
 File: figures/COMPARE_8.png Graphic file (type png)
 
 <use figures/COMPARE_8.png>
-Package pdftex.def Info: figures/COMPARE_8.png used on input line 428.
+Package pdftex.def Info: figures/COMPARE_8.png used on input line 434.
 (pdftex.def)             Requested size: 460.72124pt x 294.19196pt.
-
-<figures/COMPARE_9.png, id=374, 672.111pt x 419.8887pt>
+ [41 <./figures/COMPARE_8.png>]
+<figures/COMPARE_9.png, id=381, 672.111pt x 419.8887pt>
 File: figures/COMPARE_9.png Graphic file (type png)
 
 <use figures/COMPARE_9.png>
-Package pdftex.def Info: figures/COMPARE_9.png used on input line 436.
+Package pdftex.def Info: figures/COMPARE_9.png used on input line 448.
 (pdftex.def)             Requested size: 460.72124pt x 287.83347pt.
-
-<figures/COMPARE_10.png, id=375, 667.7748pt x 419.8887pt>
+ [42 <./figures/COMPARE_9.png>]
+<figures/COMPARE_10.png, id=386, 679.338pt x 419.8887pt>
 File: figures/COMPARE_10.png Graphic file (type png)
 
 <use figures/COMPARE_10.png>
-Package pdftex.def Info: figures/COMPARE_10.png used on input line 444.
-(pdftex.def)             Requested size: 460.72124pt x 289.7043pt.
-) [40 <./figures/COMPARE_8.png>] [41 <./figures/COMPARE_9.png>] [42 <./figures/
-COMPARE_10.png>]
+Package pdftex.def Info: figures/COMPARE_10.png used on input line 462.
+(pdftex.def)             Requested size: 460.72124pt x 284.77092pt.
+ [43 <./figures/COMPARE_10.png>]) [44]
 \openout2 = `Conclusions.aux'.
 
- (./Conclusions.tex
+
+(./Conclusions.tex
 Chapter 5.
-) [43
+[45
 
 
 
-]
+]) [46]
 \openout2 = `Abbreviations.aux'.
 
  (./Abbreviations.tex
@@ -1006,22 +1014,22 @@ Appendix A.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [44
+) [47
 
 
 
-] [45] (./thesis.lof)
+] [48] (./thesis.lof)
 \tf@lof=\write4
 \openout4 = `thesis.lof'.
 
- [46
+ [49
 
 
 ] (./thesis.lot)
 \tf@lot=\write5
 \openout5 = `thesis.lot'.
 
- (./thesis.bbl [47
+ (./thesis.bbl [50
 
 ]
 Underfull \hbox (badness 7186) in paragraph at lines 39--43
@@ -1035,7 +1043,7 @@ Underfull \hbox (badness 1728) in paragraph at lines 62--66
 k sim-u-la-tion.
  []
 
-[48
+[51
 
 ]
 
@@ -1051,41 +1059,42 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[49]
+[52]
 Underfull \hbox (badness 1635) in paragraph at lines 199--203
 []\OT1/cmr/m/n/12 Shih-en Wei, Hung-yun Hsieh, and Hsuan-jung Su.  En-abling De
 nse
  []
 
-) [50] (./thesis.aux (./Statements.aux) (./Introduction.aux) (./Background.aux)
-(./Evaluation.aux) (./Results.aux) (./Conclusions.aux) (./Abbreviations.aux)) )
- 
+) [53] (./thesis.aux (./Statements.aux) (./Abstract.aux) (./Introduction.aux)
+(./Background.aux) (./Evaluation.aux) (./Results.aux) (./Conclusions.aux)
+(./Abbreviations.aux)) ) 
 Here is how much of TeX's memory you used:
- 5568 strings out of 494378
- 84617 string characters out of 6163207
- 176072 words of memory out of 5000000
- 8628 multiletter control sequences out of 15000+600000
+ 5579 strings out of 494378
+ 84772 string characters out of 6163207
+ 177438 words of memory out of 5000000
+ 8632 multiletter control sequences out of 15000+600000
  12992 words of font info for 46 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
  54i,19n,46p,1240b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (50 pages, 4174067 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
+.pfb>
+Output written on thesis.pdf (53 pages, 4207386 bytes).
 PDF statistics:
- 465 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
+ 474 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  181 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,38 +1,43 @@
 \select@language {USenglish}
-\contentsline {chapter}{Contents}{3}
-\contentsline {chapter}{\numberline {1}Introduction}{5}
-\contentsline {chapter}{\numberline {2}Background}{7}
-\contentsline {section}{\numberline {2.1}Random Access and its Limitations}{7}
-\contentsline {section}{\numberline {2.2}Device-to-Device}{8}
-\contentsline {section}{\numberline {2.3}Clustering}{9}
-\contentsline {chapter}{\numberline {3}Implementation}{11}
-\contentsline {section}{\numberline {3.1}Generation and distribution of UEs}{11}
-\contentsline {section}{\numberline {3.2}Path loss (attenuation)}{13}
-\contentsline {subsection}{\numberline {3.2.1}Manhattan grid}{13}
-\contentsline {subsection}{\numberline {3.2.2}Line-of-sight}{15}
-\contentsline {subsection}{\numberline {3.2.3}Non-line-of-sight}{15}
-\contentsline {section}{\numberline {3.3}Shadow fading}{17}
-\contentsline {section}{\numberline {3.4}Random access procedure and interference}{18}
-\contentsline {section}{\numberline {3.5}Clustering Algorithms}{20}
-\contentsline {subsection}{\numberline {3.5.1}LEACH}{21}
-\contentsline {subsection}{\numberline {3.5.2}Complete-Link Clustering}{22}
-\contentsline {subsection}{\numberline {3.5.3}Single-Link Clustering}{23}
-\contentsline {subsection}{\numberline {3.5.4}Ward's Method}{23}
-\contentsline {chapter}{\numberline {4}Results}{25}
-\contentsline {section}{\numberline {4.1}Evaluation methodology}{25}
-\contentsline {subsection}{\numberline {4.1.1}Percentage of UEs connecting to eNB}{27}
-\contentsline {subsection}{\numberline {4.1.2}Mean channel utilization rate}{27}
-\contentsline {subsection}{\numberline {4.1.3}Total resource efficiency}{28}
-\contentsline {subsection}{\numberline {4.1.4}Mean UE drop ratio}{28}
-\contentsline {section}{\numberline {4.2}LEACH}{29}
+\select@language {USenglish}
+\contentsline {chapter}{Contents}{4}
+\contentsline {chapter}{\numberline {1}Introduction}{6}
+\contentsline {chapter}{\numberline {2}Background}{8}
+\contentsline {section}{\numberline {2.1}Random Access and its Limitations}{8}
+\contentsline {section}{\numberline {2.2}Device-to-Device}{9}
+\contentsline {section}{\numberline {2.3}Clustering}{10}
+\contentsline {chapter}{\numberline {3}Implementation}{12}
+\contentsline {section}{\numberline {3.1}Generation and distribution of UEs}{12}
+\contentsline {section}{\numberline {3.2}Path loss (attenuation)}{14}
+\contentsline {subsection}{\numberline {3.2.1}Manhattan grid}{14}
+\contentsline {subsection}{\numberline {3.2.2}Line-of-sight}{16}
+\contentsline {subsection}{\numberline {3.2.3}Non-line-of-sight}{16}
+\contentsline {section}{\numberline {3.3}Shadow fading}{18}
+\contentsline {section}{\numberline {3.4}Random access procedure and interference}{19}
+\contentsline {section}{\numberline {3.5}Clustering Algorithms}{21}
+\contentsline {subsection}{\numberline {3.5.1}LEACH}{22}
+\contentsline {subsection}{\numberline {3.5.2}Complete-Link Clustering}{23}
+\contentsline {subsection}{\numberline {3.5.3}Single-Link Clustering}{24}
+\contentsline {subsection}{\numberline {3.5.4}Ward's Method}{24}
+\contentsline {chapter}{\numberline {4}Results}{26}
+\contentsline {section}{\numberline {4.1}Evaluation methodology}{26}
+\contentsline {subsection}{\numberline {4.1.1}Percentage of UEs connecting to eNB}{28}
+\contentsline {subsection}{\numberline {4.1.2}Mean channel utilization rate}{28}
+\contentsline {subsection}{\numberline {4.1.3}Total resource efficiency}{29}
+\contentsline {subsection}{\numberline {4.1.4}Mean UE drop ratio}{29}
+\contentsline {section}{\numberline {4.2}LEACH}{30}
 \contentsline {section}{\numberline {4.3}Hierarchical Algorithms}{35}
 \contentsline {subsection}{\numberline {4.3.1}Complete-Link}{35}
 \contentsline {subsection}{\numberline {4.3.2}Single-Link}{35}
-\contentsline {subsection}{\numberline {4.3.3}Ward's Method}{37}
-\contentsline {section}{\numberline {4.4}Comparison}{39}
-\contentsline {subsection}{\numberline {4.4.1}Percentage of UEs connecting to eNB}{39}
-\contentsline {chapter}{\numberline {5}Conclusions and Outlook}{43}
-\contentsline {chapter}{\numberline {A}Notation and Abbreviations}{44}
-\contentsline {chapter}{List of Figures}{46}
-\contentsline {chapter}{List of Tables}{47}
-\contentsline {chapter}{Bibliography}{48}
+\contentsline {subsection}{\numberline {4.3.3}Ward's Method}{36}
+\contentsline {section}{\numberline {4.4}Comparison}{40}
+\contentsline {subsection}{\numberline {4.4.1}Percentage of UEs connecting to eNB}{40}
+\contentsline {subsection}{\numberline {4.4.2}Mean channel utilization rate}{41}
+\contentsline {subsection}{\numberline {4.4.3}Total resource efficiency}{42}
+\contentsline {subsection}{\numberline {4.4.4}Mean UE drop ratio}{43}
+\contentsline {subsection}{\numberline {4.4.5}Summary}{44}
+\contentsline {chapter}{\numberline {5}Conclusions and Outlook}{45}
+\contentsline {chapter}{\numberline {A}Notation and Abbreviations}{47}
+\contentsline {chapter}{List of Figures}{49}
+\contentsline {chapter}{List of Tables}{50}
+\contentsline {chapter}{Bibliography}{51}

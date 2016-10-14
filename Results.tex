@@ -264,10 +264,41 @@ Intuitively, one might expect that $\overline{\theta}_{drops}$ would steadily ri
 \label{fig:LEACHLINES_10}
 \end{figure}
 
+\clearpage
+
 \section{Hierarchical Algorithms}\label{description:HIERA}
 \subsection{Complete-Link}\label{description:COMPLETE}
 
-\begin{figure}
+
+In figure \ref{fig:COMPLETE_2} concerning \textbf{percentage of UEs connecting to eNB $P_{UE\rightarrow eNB}$}, we see a steady lowering of $P_{UE\rightarrow eNB}$ towards a saturation value of around $0.1$. Unlike LEACH or Single-Link, this value is ``organic'', since the stopping criteria for the algorithm is purely the the SNR threshold previously defined. 
+
+\textbf{Mean channel utilization rate} $\overline{\varrho}_{channel}$ (figure \ref{fig:COMPLETE_8}) shows an even weaker trend downwards than is the case in LEACH, although the high variance in the data once again restricts conclusive observations in this area. It is fair to say, however, that there does not seem to exist a strong correlation between $\lambda$ and $\overline{\varrho}_{channel}$ in this clustering scheme.
+
+\textbf{Total resource efficiency}, in figure \ref{fig:COMPLETE_9}, experiences a stronger upswing on the lower end of the $\lambda$ axis and continues to grow throughout, albeit in a more tentative manner. The magnitude of the values stays within a similar range as LEACH, as will be further explored in section \ref{Comparison}.
+
+Lastly, the \textbf{mean UE drop ratio $\overline{\theta}_{drops}$} plotted in figure \ref{fig:COMPLETE_10} shows an overall downward trend, as was expected from our other simulations.
+
+\subsection{Single-Link}\label{description:SINGLE}
+
+For Single-Link, we took a similar approach to that of LEACH, owing to the stark similarities between the two. As discussed in \ref{SLC}, we used the same values for $P_{LEACH}$ and $P_{SINGLE}$, both to highlight the similarities and better tease apart the differences.
+
+It makes little sense to discuss the plot featured in figure \ref{fig:SINGLELINES_2} detailing the \textbf{percentage of UEs connecting to eNB $P_{UE\rightarrow eNB}$}. Due to the very definition of $P_{SINGLE}$ in section \ref{SLC}, it's clear that $P_{UE\rightarrow eNB}$ will remain at roughly the same level throughout all levels of $\lambda$. The fluctuations are only due to the variance of the Poisson process used to generate the positions of our UEs.
+
+Regarding figure \ref{fig:SINGLELINES_8} and the \textbf{mean channel utilization rate $\overline{\varrho}_{channel}$}, it seems noteworthy that the variance for the metric is not as disruptive as that of earlier observations. The downward trend is clear and, as with LEACH, higher CH density roughly correlates with lower $\overline{\varrho}_{channel}$, although in this case the relationship is maintained even in lower values of $\lambda$.
+
+\textbf{Total resource efficiency} (figure \ref{fig:SINGLELINES_9}) also exhibits a remarkably close behavior to that of LEACH. We will compare them directly in section \ref{Comparison} to disentangle the differences between both.
+
+The \textbf{mean UE drop ratio $\overline{\theta}_{drops}$} plots of figure \ref{fig:SINGLELINES_10} TERMINAR
+
+\subsection{Ward's Method} \label{description:WARD}
+
+Looking at the results given by Ward's method, it is immediately apparent that this was the worst clustering scheme, in terms of actually managing to provide structures to alleviate the pressure on the eNB's resources. This observation is easily explained by simply glancing at figure \ref{fig:WARD_2}, where $P_{UE\rightarrow eNB}$ is detailed. The metric hovers constantly around 90\%, meaning that the large majority of UEs are unable to be grouped into a viable cluster and elect to transmit their information through traditional means. This rate is simply unacceptable for highly dense applications like the one we are investigating.
+
+Despite this, the few D2D connections that do exist exhibit a similar behavior than the others in terms of \textbf{mean channel utilization rate $\overline{\varrho}_{channel}$} (figure \ref{fig:WARD_8}) and \textbf{total resource efficiency} (figure \ref{fig:WARD_9}). The high magnitude of the levels of resource efficiency, although initially impressive can be easily disregarded: a very low number of D2D connections will make on average better use of all available D2D resources simply due to the fact that there are fewer elements between which to share the resource pool.
+
+The low amount of connections is only highlighted by the bizarre \textbf{mean UE drop ratio $\overline{\theta}_{drops}$} curve of figure \ref{fig:WARD_10}. With a low number of D2D connections per cluster and, as mentioned, more resources available for each of those links, drops become a non-issue and hit 0 quickly.
+
+\begin{figure}[H]
   \begin{subfigure}[b]{0.5\linewidth}
     \centering
     \captionsetup{justification=centering}
@@ -302,16 +333,7 @@ Intuitively, one might expect that $\overline{\theta}_{drops}$ would steadily ri
   \label{fig:pretty_results_COMPLETE} 
 \end{figure}
 
-In figure \ref{fig:COMPLETE_2} concerning \textbf{percentage of UEs connecting to eNB $P_{UE\rightarrow eNB}$}, we see a steady lowering of $P_{UE\rightarrow eNB}$ towards a saturation value of around $0.1$. Unlike LEACH or Single-Link, this value is ``organic'', since the stopping criteria for the algorithm is purely the the SNR threshold previously defined. 
-
-\textbf{Mean channel utilization rate} $\overline{\varrho}_{channel}$ (figure \ref{fig:COMPLETE_8}) shows an even weaker trend downwards than is the case in LEACH, although the high variance in the data once again restricts conclusive observations in this area. It is fair to say, however, that there does not seem to exist a strong correlation between $\lambda$ and $\overline{\varrho}_{channel}$ in this clustering scheme.
-
-\textbf{Total resource efficiency}, in figure \ref{fig:COMPLETE_9}, experiences a stronger upswing on the lower end of the $\lambda$ axis and continues to grow throughout, albeit in a more tentative manner. The magnitude of the values stays within a similar range as LEACH, as will be further explored in section \ref{Comparison}.
-
-Lastly, the \textbf{mean UE drop ratio $\overline{\theta}_{drops}$} plotted in figure \ref{fig:COMPLETE_10} shows an overall downward trend, as was expected from our other simulations.
-
-\subsection{Single-Link}\label{description:SINGLE}
-\begin{figure}
+\begin{figure}[H]
   \begin{subfigure}[b]{0.5\linewidth}
     \centering
     \captionsetup{justification=centering}
@@ -346,19 +368,7 @@ Lastly, the \textbf{mean UE drop ratio $\overline{\theta}_{drops}$} plotted in f
   \label{fig:pretty_results_SINGLE} 
 \end{figure}
 
-For Single-Link, we took a similar approach to that of LEACH, owing to the stark similarities between the two. As discussed in \ref{SLC}, we used the same values for $P_{LEACH}$ and $P_{SINGLE}$, both to highlight the similarities and better tease apart the differences.
-
-It makes little sense to discuss the plot featured in figure \ref{fig:SINGLELINES_2} detailing the \textbf{percentage of UEs connecting to eNB $P_{UE\rightarrow eNB}$}. Due to the very definition of $P_{SINGLE}$ in section \ref{SLC}, it's clear that $P_{UE\rightarrow eNB}$ will remain at roughly the same level throughout all levels of $\lambda$. The fluctuations are only due to the variance of the Poisson process used to generate the positions of our UEs.
-
-Regarding figure \ref{fig:SINGLELINES_8} and the \textbf{mean channel utilization rate $\overline{\varrho}_{channel}$}, it seems noteworthy that the variance for the metric is not as disruptive as that of earlier observations. The downward trend is clear and, as with LEACH, higher CH density roughly correlates with lower $\overline{\varrho}_{channel}$, although in this case the relationship is maintained even in lower values of $\lambda$.
-
-\textbf{Total resource efficiency} (figure \ref{fig:SINGLELINES_9}) also exhibits a remarkably close behavior to that of LEACH. We will compare them directly in section \ref{Comparison} to disentangle the differences between both.
-
-The \textbf{mean UE drop ratio $\overline{\theta}_{drops}$} plots of figure \ref{fig:SINGLELINES_10} TERMINAR
-
-\subsection{Ward's Method} \label{description:WARD}
-
-\begin{figure}
+\begin{figure}[H]
   \begin{subfigure}[b]{0.5\linewidth}
     \centering
     \captionsetup{justification=centering}
@@ -393,17 +403,11 @@ The \textbf{mean UE drop ratio $\overline{\theta}_{drops}$} plots of figure \ref
   \label{fig:pretty_results_WARD} 
 \end{figure}
 
-Looking at the results given by Ward's method, it is immediately apparent that this was the worst clustering scheme, in terms of actually managing to provide structures to alleviate the pressure on the eNB's resources. This observation is easily explained by simply glancing at figure \ref{fig:WARD_2}, where $P_{UE\rightarrow eNB}$ is detailed. The metric hovers constantly around 90\%, meaning that the large majority of UEs are unable to be grouped into a viable cluster and elect to transmit their information through traditional means. This rate is simply unacceptable for highly dense applications like the one we are investigating.
-
-Despite this, the few D2D connections that do exist exhibit a similar behavior than the others in terms of \textbf{mean channel utilization rate $\overline{\varrho}_{channel}$} (figure \ref{fig:WARD_8}) and \textbf{total resource efficiency} (figure \ref{fig:WARD_9}). The high magnitude of the levels of resource efficiency, although initially impressive can be easily disregarded: a very low number of D2D connections will make on average better use of all available D2D resources simply due to the fact that there are fewer elements between which to share the resource pool.
-
-The low amount of connections is only highlighted by the bizarre \textbf{mean UE drop ratio $\overline{\theta}_{drops}$} curve of figure \ref{fig:WARD_10}. With a low number of D2D connections per cluster and, as mentioned, more resources available for each of those links, drops become a non-issue and hit 0 quickly.
-
 \clearpage
 
 \section{Comparison}\label{Comparison}
 \subsection{Percentage of UEs connecting to eNB}
-\begin{figure}
+\begin{figure}[H]
 \centering
 \captionsetup{justification=centering}
 \includegraphics[width=1\linewidth]{figures/COMPARE_2}
@@ -422,7 +426,9 @@ should be of note. In this way, the eNB could conceivably ``change'' algorithms 
 
 As previously expressed in section \ref{description:WARD}, this graph particularly evidences the inadequacy of Ward's method as a clustering scheme in our simulated scenario, at least the way we defined it. It is conceivable that Ward's method could serve its purpose in situations where there is a relative wealth of available cellular resources, diminishing the need for spectrum reutilization through D2D. This scenario, however, does not correspond with either our simulations nor our expectations of the future development of wireless networking. Even then, simpler mechanisms, such as LEACH with a particularly high $P_{LEACH}$ could meet this objective without the relative complexity of Ward's method.
 
-\begin{figure}
+\subsection{Mean channel utilization rate}
+
+\begin{figure}[H]
 \centering
 \captionsetup{justification=centering}
 \includegraphics[width=1\linewidth]{figures/COMPARE_8}
@@ -430,7 +436,13 @@ As previously expressed in section \ref{description:WARD}, this graph particular
 \label{fig:COMPARE_8}
 \end{figure}
 
-\begin{figure}
+In contrast to $P_{UE\rightarrow eNB}$, the plots (figure \ref{fig:COMPARE_8}) detailing the behavior of $\overline{\varrho}_{channel}$ do not seem to be as straightforward. Adding to the previously observed variance values, most plots intersect each other in seemingly random ways: LEACH shows either a downward or an upward trend depending on its $P_{LEACH}$, while Complete-Link seems unaffected by a changing $\lambda$ value, hovering between $1.0$ and $1.1$. These behaviors seem to call into question the suitability of $\overline{\varrho}_{channel}$ as a viable metric for the evaluation of our studied algorithms. 
+
+Despite this, if we accept its validity, it is important to recognize that in this measure, just like in $P_{UE\rightarrow eNB}$, Single-Link seems to outperform both its LEACH counterparts at equal values of $P_{LEACH}$ and $P_{SINGLE}$, as well as all other observed schemes at $P_{SINGLE} = 0.1$. The gap between the curves defined by $P_{LEACH} = 0.1$ and $P_{SINGLE} = 1$ is particularly glaring. Ward's method starts off with the second highest $\overline{\varrho}_{channel}$ but it quickly degrades, finishing with the lowest values for higher $\lambda$. Having said that, all differences become barely significant at higher values of $\lambda$.
+
+\subsection{Total resource efficiency}
+
+\begin{figure}[H]
 \centering
 \captionsetup{justification=centering}
 \includegraphics[width=1\linewidth]{figures/COMPARE_9}
@@ -438,10 +450,28 @@ As previously expressed in section \ref{description:WARD}, this graph particular
 \label{fig:COMPARE_9}
 \end{figure}
 
-\begin{figure}
+As we can observe in figure \ref{fig:COMPARE_9} we can confirm the pattern that was emerging in the previous two points: Single-Link outperforms the equivalent LEACH scheme, Complete-Link presents unremarkable numbers and Ward's method is whimsically unreliable. The reason for Ward's apparently high resource efficiency is explained with more detail in section \ref{description:WARD}, but it bears repeating that it is due to its ineptitude at forming viable clusters. There is no real new information to be gained from this metric: every curve presents the same upward trend and the relationships between the curves themselves are strikingly similar to those of $P_{UE\rightarrow eNB}$ and $\overline{\varrho}_{channel}$. 
+
+Ultimately, even discounting Ward's method, there is little difference between the schemes. Resource efficiency's correlation with $\lambda$ seems to outweigh other characteristics the individual algorithms might have.
+
+\subsection{Mean UE drop ratio}
+
+\begin{figure}[H]
 \centering
 \captionsetup{justification=centering}
 \includegraphics[width=1\linewidth]{figures/COMPARE_10}
 \caption{Comparison: Mean UE drop ratio $\overline{\theta}_{drops}$}
 \label{fig:COMPARE_10}
 \end{figure}
+
+Finally, the curves visualized in figure \ref{fig:COMPARE_10} present slightly different trends than those of other metrics, but not different enough to be surprising. They all present a downward trend, due to the decreasing levels of interference despite higher UE density owing to the fixed request arrival rate $\lambda_A$. While Single-Link holds its supremacy at low levels of $P_{SINGLE}$, the curves of both Single-Link and LEACH are almost inseparable for $P_{SINGLE} = P_{LEACH} = 0.3$. 
+
+The difference can be explained by the way the clusters are formed: while LEACH has predetermined clusters that may or may not be particularly convenient for other UEs to join, Single-Link first forms ``organic'' clusters and then elects its CH. As with most other metrics, however, an increase in the density of CHs, be it due to $\lambda$ or $P_{LEACH/SINGLE}$ soon closes that gap. Complete-Link seems to hold its middle ground.
+
+Ward's curve predictably splutters off, \textit{inconsequentially} (c.f. section \ref{description:WARD}).
+
+\subsection{Summary}
+
+All in all, it is clear that Single-Linkage clustering provides the best results according to the metrics used compared to the other algorithms studied. The fact that it is both easily scalable and a very well-studied and popular clustering algorithm (\cite{Everitt2011}) add to this notion. Despite this seemingly indisputable superiority, it must be said the the costs associated with the actual creation of the cluster structure are relatively high: the algorithm relies on global knowledge of the relative positions of all UEs to each other, which may not be given in a rapidly-changing mobile scenario. It is also relatively complex computationally, at $O(n^2)$ and necessitates a large amount of extra signaling from the network.
+
+If these obstacles prove too high a hurdle, the data here shows that LEACH, despite its simplicity and its poorer performance in lower densities of both UEs and CHs, provides a great alternative to Single-Link. At higher values of $\lambda$ and $P_{LEACH}$, its conduct very much resembles that of the hierarchical algorithm, while still being possible to implement with relatively few overhead. Other clustering schemes presented here pale in comparison and should only be used in very specific circumstances.

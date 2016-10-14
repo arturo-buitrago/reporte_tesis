@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: Statements.aux
+A level-1 auxiliary file: Abstract.aux
 A level-1 auxiliary file: Introduction.aux
 A level-1 auxiliary file: Background.aux
 A level-1 auxiliary file: Evaluation.aux
@@ -11,108 +12,108 @@ A level-1 auxiliary file: Abbreviations.aux
 The style file: alpha.bst
 Database file #1: biblio.bib
 Warning--I'm ignoring Lee's extra "pages" field
---line 298 of file biblio.bib
-Repeated entry---line 726 of file biblio.bib
+--line 301 of file biblio.bib
+Repeated entry---line 729 of file biblio.bib
  : @misc{3rdGenerationPartnershipProject;2011
  :                                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 799 of file biblio.bib
+Repeated entry---line 802 of file biblio.bib
  : @article{3rdGenerationPartnershipProject;2012
  :                                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 807 of file biblio.bib
+Repeated entry---line 810 of file biblio.bib
  : @article{Erturk2013
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 844 of file biblio.bib
+Repeated entry---line 847 of file biblio.bib
  : @article{Heino2010
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 870 of file biblio.bib
+Repeated entry---line 873 of file biblio.bib
  : @article{Shalizi2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 906 of file biblio.bib
+Repeated entry---line 909 of file biblio.bib
  : @misc{3rdGenerationPartnershipProject;
  :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 911 of file biblio.bib
+Repeated entry---line 914 of file biblio.bib
  : @article{Meinila2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 926 of file biblio.bib
+Repeated entry---line 929 of file biblio.bib
  : @article{Raschkowski
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 931 of file biblio.bib
+Repeated entry---line 934 of file biblio.bib
  : @article{Klugel2014a
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 941 of file biblio.bib
+Repeated entry---line 944 of file biblio.bib
  : @article{Klugel2014
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 951 of file biblio.bib
+Repeated entry---line 954 of file biblio.bib
  : @article{Forkel2004
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 997 of file biblio.bib
+Repeated entry---line 1000 of file biblio.bib
  : @article{Heinzelman2000
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1030 of file biblio.bib
+Repeated entry---line 1033 of file biblio.bib
  : @article{Polese2016
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1119 of file biblio.bib
+Repeated entry---line 1122 of file biblio.bib
  : @article{Liao2013
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1200 of file biblio.bib
+Repeated entry---line 1203 of file biblio.bib
  : @article{Niyato2011
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1215 of file biblio.bib
+Repeated entry---line 1218 of file biblio.bib
  : @article{Afsar2014
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1345 of file biblio.bib
+Repeated entry---line 1348 of file biblio.bib
  : @article{Jiang2009
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1358 of file biblio.bib
+Repeated entry---line 1361 of file biblio.bib
  : @article{Wei2012
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1366 of file biblio.bib
+Repeated entry---line 1369 of file biblio.bib
  : @article{Wei2012a
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1375 of file biblio.bib
+Repeated entry---line 1378 of file biblio.bib
  : @article{Wang2013
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1387 of file biblio.bib
+Repeated entry---line 1390 of file biblio.bib
  : @book{Cox2012
  :              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1429 of file biblio.bib
+Repeated entry---line 1432 of file biblio.bib
  : @article{Riker2015
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1451 of file biblio.bib
+Repeated entry---line 1454 of file biblio.bib
  : @article{Shariatmadari2015
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1461 of file biblio.bib
+Repeated entry---line 1464 of file biblio.bib
  : @article{Laya2014
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1470 of file biblio.bib
+Repeated entry---line 1473 of file biblio.bib
  : @article{Laya2014a
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1483 of file biblio.bib
+Repeated entry---line 1486 of file biblio.bib
  : @article{Shariatmadari2015a
  :                            ,
 I'm skipping whatever remains of this entry
@@ -133,7 +134,7 @@ Warning--empty journal in Wei2012a
 Warning--empty journal in Wei2012
 You've used 35 entries,
             2543 wiz_defined-function locations,
-            780 strings with 11187 characters,
+            782 strings with 11196 characters,
 and the built_in function-call counts, 15250 in all, are:
 = -- 1511
 > -- 837
