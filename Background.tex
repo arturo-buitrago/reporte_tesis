@@ -5,11 +5,11 @@ The necessity of the expansion of the existing standards of wireless networks fo
 
 \begin{figure}[!h]
 \centering
-\includegraphics[scale = 0.45]{figures/Random_Access_Procedure}
-\caption{Detail of the Random Access Procedure, \cite{Cox2012}}
+\includegraphics[scale = 0.35]{figures/RACH_LAYA}
+\caption{Detail of the Random Access Procedure, \cite{Laya2014}} \label{fig:RACH_LAYA}
 \end{figure}
 
-RA procedures occur when a device intends to utilize resources on the Physical Uplink Shared Channel (PUSCH), but has not been given access to the Physical Uplink Control Channel (PUCCH) by the appropriate eNB, which is needed for a scheduling request. As described in \cite{Cox2012}, the User Equipment (UE) then sends a random access preamble to trigger the procedure, in order to gain the desired access.
+RA procedures occur when a device intends to utilize resources on the Physical Uplink Shared Channel (PUSCH), but has not been given access to the Physical Uplink Control Channel (PUCCH) by the appropriate eNB, which is needed for a scheduling request. As described in \cite{Cox2012}, the User Equipment (UE) then sends a random access preamble to trigger the procedure, in order to gain the desired access, see figure \ref{fig:RACH_LAYA}.
 
 This preamble is chosen randomly from an available set generated with a Zadoff-Chu mathematical sequence and transmitted on the Physical Random Access Channel (PRACH). The eNB then solves any possible collisions that may occur from devices transmitting with the same preamble, granting access to some while ordering others to back off for a certain amount of time. If no access grant is given after several tries, the transmission is considered to have failed.
 

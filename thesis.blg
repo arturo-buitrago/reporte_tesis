@@ -2,118 +2,119 @@ This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: Statements.aux
-A level-1 auxiliary file: Kurzfassung.aux
-A level-1 auxiliary file: Abstract.aux
 A level-1 auxiliary file: Introduction.aux
 A level-1 auxiliary file: Background.aux
 A level-1 auxiliary file: Evaluation.aux
 A level-1 auxiliary file: Results.aux
 A level-1 auxiliary file: Conclusions.aux
-A level-1 auxiliary file: Appendix.aux
 A level-1 auxiliary file: Abbreviations.aux
 The style file: alpha.bst
 Database file #1: biblio.bib
 Warning--I'm ignoring Lee's extra "pages" field
---line 296 of file biblio.bib
-Repeated entry---line 724 of file biblio.bib
+--line 298 of file biblio.bib
+Repeated entry---line 726 of file biblio.bib
  : @misc{3rdGenerationPartnershipProject;2011
  :                                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 797 of file biblio.bib
+Repeated entry---line 799 of file biblio.bib
  : @article{3rdGenerationPartnershipProject;2012
  :                                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 805 of file biblio.bib
+Repeated entry---line 807 of file biblio.bib
  : @article{Erturk2013
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 842 of file biblio.bib
+Repeated entry---line 844 of file biblio.bib
  : @article{Heino2010
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 868 of file biblio.bib
+Repeated entry---line 870 of file biblio.bib
  : @article{Shalizi2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 904 of file biblio.bib
+Repeated entry---line 906 of file biblio.bib
  : @misc{3rdGenerationPartnershipProject;
  :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 909 of file biblio.bib
+Repeated entry---line 911 of file biblio.bib
  : @article{Meinila2009
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 924 of file biblio.bib
+Repeated entry---line 926 of file biblio.bib
  : @article{Raschkowski
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 929 of file biblio.bib
+Repeated entry---line 931 of file biblio.bib
  : @article{Klugel2014a
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 939 of file biblio.bib
+Repeated entry---line 941 of file biblio.bib
  : @article{Klugel2014
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 949 of file biblio.bib
+Repeated entry---line 951 of file biblio.bib
  : @article{Forkel2004
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 995 of file biblio.bib
+Repeated entry---line 997 of file biblio.bib
  : @article{Heinzelman2000
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1028 of file biblio.bib
+Repeated entry---line 1030 of file biblio.bib
  : @article{Polese2016
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1117 of file biblio.bib
+Repeated entry---line 1119 of file biblio.bib
  : @article{Liao2013
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1198 of file biblio.bib
+Repeated entry---line 1200 of file biblio.bib
  : @article{Niyato2011
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1213 of file biblio.bib
+Repeated entry---line 1215 of file biblio.bib
  : @article{Afsar2014
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1343 of file biblio.bib
+Repeated entry---line 1345 of file biblio.bib
  : @article{Jiang2009
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1356 of file biblio.bib
+Repeated entry---line 1358 of file biblio.bib
  : @article{Wei2012
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1364 of file biblio.bib
+Repeated entry---line 1366 of file biblio.bib
  : @article{Wei2012a
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1373 of file biblio.bib
+Repeated entry---line 1375 of file biblio.bib
  : @article{Wang2013
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1385 of file biblio.bib
+Repeated entry---line 1387 of file biblio.bib
  : @book{Cox2012
  :              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1427 of file biblio.bib
+Repeated entry---line 1429 of file biblio.bib
  : @article{Riker2015
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1449 of file biblio.bib
+Repeated entry---line 1451 of file biblio.bib
  : @article{Shariatmadari2015
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1459 of file biblio.bib
+Repeated entry---line 1461 of file biblio.bib
  : @article{Laya2014
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1468 of file biblio.bib
+Repeated entry---line 1470 of file biblio.bib
  : @article{Laya2014a
  :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1483 of file biblio.bib
+ : @article{Shariatmadari2015a
+ :                            ,
 I'm skipping whatever remains of this entry
 Warning--empty journal in 3Gpp2009
 Warning--empty journal in 3rdGenerationPartnershipProject;2012
@@ -130,45 +131,45 @@ Warning--empty journal in Polese2016
 Warning--there's a number but no volume in Shalizi2009
 Warning--empty journal in Wei2012a
 Warning--empty journal in Wei2012
-You've used 32 entries,
+You've used 35 entries,
             2543 wiz_defined-function locations,
-            763 strings with 10545 characters,
-and the built_in function-call counts, 13512 in all, are:
-= -- 1355
-> -- 692
+            780 strings with 11187 characters,
+and the built_in function-call counts, 15250 in all, are:
+= -- 1511
+> -- 837
 < -- 20
-+ -- 246
-- -- 244
-* -- 989
-:= -- 2213
-add.period$ -- 93
-call.type$ -- 32
-change.case$ -- 214
-chr.to.int$ -- 30
-cite$ -- 47
-duplicate$ -- 518
-empty$ -- 899
-format.name$ -- 283
-if$ -- 2724
++ -- 301
+- -- 299
+* -- 1163
+:= -- 2522
+add.period$ -- 102
+call.type$ -- 35
+change.case$ -- 249
+chr.to.int$ -- 33
+cite$ -- 50
+duplicate$ -- 560
+empty$ -- 985
+format.name$ -- 338
+if$ -- 3050
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 31
-newline$ -- 161
-num.names$ -- 96
-pop$ -- 212
+missing$ -- 34
+newline$ -- 176
+num.names$ -- 105
+pop$ -- 238
 preamble$ -- 1
-purify$ -- 248
+purify$ -- 286
 quote$ -- 0
-skip$ -- 469
+skip$ -- 502
 stack$ -- 0
-substring$ -- 736
-swap$ -- 98
+substring$ -- 812
+swap$ -- 101
 text.length$ -- 20
 text.prefix$ -- 10
 top$ -- 0
-type$ -- 248
+type$ -- 272
 warning$ -- 15
-while$ -- 137
-width$ -- 34
-write$ -- 394
-(There were 25 error messages)
+while$ -- 150
+width$ -- 37
+write$ -- 433
+(There were 26 error messages)

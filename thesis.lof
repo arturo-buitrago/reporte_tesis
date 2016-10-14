@@ -1,18 +1,27 @@
 \select@language {USenglish}
-\select@language {german}
-\select@language {USenglish}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Detail of the Random Access Procedure, \cite {Cox2012}\relax }}{9}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of D2D Clustering in a network \cite {Wang2013}\relax }}{12}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Detail of the Random Access Procedure, \cite {Laya2014}\relax }}{8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of D2D Clustering in a network \cite {Wang2013}\relax }}{10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of a PPP with $\lambda = 200$\relax }}{14}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparison between two Manhattan Grids\relax }}{16}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Calculation of NLOS path\relax }}{18}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Visualization of NLOS path with intersection acting as relay node\relax }}{19}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Shadow Fading values before and after correlation adjustment\relax }}{20}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Sample clustering as a result of Ward's Method \cite {Shalizi2009}\relax }}{26}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of a PPP with $\lambda = 200$\relax }}{12}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Comparison between two Manhattan Grids\relax }}{14}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Calculation of NLOS path\relax }}{16}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Visualization of NLOS path with intersection acting as relay node\relax }}{17}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Shadow Fading values before and after correlation adjustment\relax }}{18}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Sample clustering as a result of Ward's Method \cite {Shalizi2009}\relax }}{24}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Behavior of LEACH compared to $P_{LEACH}$ and $\lambda $\relax }}{30}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces LEACH: Percentage of UEs connecting to eNB $P_{UE\rightarrow eNB}$ in relation to mean point density $\lambda $ \relax }}{31}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces LEACH: Mean channel utilization rate $\overline {\varrho }_{channel}$ in relation to mean point density $\lambda $ \relax }}{32}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces LEACH: Total resource efficiency in relation to mean point density $\lambda $ \relax }}{32}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces LEACH: Mean UE drop ratio $\overline {\theta }_{drops}$ in relation to mean point density $\lambda $ \relax }}{33}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Behavior of Complete-Link clustering compared to $\lambda $\relax }}{34}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Behavior of Single-Link clustering compared to $\lambda $\relax }}{36}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Behavior of Ward's method compared to $\lambda $\relax }}{38}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Comparison: \% of UEs connecting to eNB $P_{UE\rightarrow eNB}$ \relax }}{39}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Comparison: Mean channel utilization rate $\overline {\varrho }_{channel}$\relax }}{40}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Comparison: Total resource efficiency\relax }}{41}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Comparison: Mean UE drop ratio $\overline {\theta }_{drops}$\relax }}{42}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

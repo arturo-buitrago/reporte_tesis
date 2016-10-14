@@ -35,6 +35,12 @@ Christopher Cox.
   Communicatios}}.
 \newblock 2012.
 
+\bibitem[DGK{\etalchar{+}}13]{6568922}
+P.~Demestichas, A.~Georgakopoulos, D.~Karvounas, K.~Tsagkaris, V.~Stavroulaki,
+  J.~Lu, C.~Xiong, and J.~Yao.
+\newblock 5g on the horizon: Key challenges for the radio-access network.
+\newblock {\em IEEE Vehicular Technology Magazine}, 8(3):47--53, Sept 2013.
+
 \bibitem[ELLS11]{Everitt2011}
 Brian~S. Everitt, Sabine Landau, Morven Leese, and Daniel Stahl.
 \newblock {\em {Cluster Analysis}}, volume~14.
@@ -45,6 +51,12 @@ M~Cenk Erturk, Sayandev Mukherjee, Hiroyuki Ishii, and Huseyin Arslan.
 \newblock {Distributions of transmit power and SINR in device-to-device
   networks}.
 \newblock {\em IEEE Communications Letters}, 17(2):273--276, 2013.
+
+\bibitem[FDM{\etalchar{+}}12]{6163598}
+G.~Fodor, E.~Dahlman, G.~Mildh, S.~Parkvall, N.~Reider, G.~Miklós, and
+  Z.~Turányi.
+\newblock Design aspects of network assisted device-to-device communications.
+\newblock {\em IEEE Communications Magazine}, 50(3):170--177, March 2012.
 
 \bibitem[FSA04]{Forkel2004}
 Ingo Forkel, Marc Schinnenburg, and Markus Ang.
@@ -98,8 +110,7 @@ Markus Kl{\"{u}}gel and Wolfgang Kellerer.
 
 \bibitem[LAAZ14]{Laya2014}
 A~Laya, L~Alonso, and J~Alonso-Zarate.
-\newblock {Is the Random Access Channel of {\{}{\{}{\}}LTE{\{}{\}}{\}} and
-  {\{}{\{}{\}}LTE-A{\{}{\}}{\}} Suitable for {\{}{\{}{\}}M2M{\{}{\}}{\}}
+\newblock {Is the Random Access Channel of LTE and LTE-A Suitable for M2M
   Communications? A Survey of Alternatives}.
 \newblock 16(1):4--16, 2014.
 
@@ -118,7 +129,7 @@ Ying Liao, Huan Qi, and Weiqun Li.
 
 \bibitem[LWW{\etalchar{+}}14]{Laya2014a}
 Andres Laya, Kun Wang, Ashraf~Awadelkarim Widaa, Jesus Alonso-Zarate, Jan
-  Markendahl, and Luis Alonso.
+  Markendahl, Luis Alonso, and Francisco~J. Díaz~Borbón.
 \newblock {Device-to-device communications and small cells: Enabling spectrum
   reuse for dense networks}.
 \newblock {\em IEEE Wireless Communications}, 21(4):98--105, 2014.
@@ -172,6 +183,13 @@ H~Shariatmadari, P~Osti, S~Iraji, and R~J{\"{a}}ntti.
 \newblock {\em Proc. IEEE Personal, Indoor and Mobile Radio Communications
   (PIMRC) – Workshop on M2M Communications: Challenges, Solutions and
   Applications}, pages 1100--1105, 2015.
+
+\bibitem[SRI{\etalchar{+}}15]{Shariatmadari2015a}
+Hamidreza Shariatmadari, Rapeepat Ratasuk, Sassan Iraji, Andr{\'{e}}s Laya,
+  Tarik Taleb, Riku J{\"{a}}ntti, and Amitava Ghosh.
+\newblock {Machine-type communications: current status and future perspectives
+  toward 5G systems}.
+\newblock {\em IEEE Communications Magazine}, 53(9):10--17, 2015.
 
 \bibitem[War63]{Ward1963}
 Joe~H. Ward.

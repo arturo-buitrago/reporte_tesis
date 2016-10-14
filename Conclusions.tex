@@ -1,3 +1,16 @@
 \chapter{Conclusions and Outlook}
 
 The thesis is concluded here. The considered problem is repeated. The contribution of this work is highlighted and the results are recapitulated. Remaining questions are stated and ideas for future work are expressed. 
+
+
+
+
+A big open question is of course, the decision to fix the arrival rate $\lambda_A$. If the data being transferred is highly correlated and includes redundancy, as is often the case with WSNs, then lower request creation rate with higher number of devices makes sense: the frequency of the information that needs to be transmitted can afford to be lower. However, our simulation scenario was thought out to have very disparate data sources, making it intrinsically different from the WSN scenario. More research is needed with a $\lambda_A$ defined at the UE and not at the cluster head, to better evaluate the negative (and even potentially positive) effect that increased interference both within and without the cluster may cause. Thankfully this sort of adjustment seems relatively simple to make and integrate into the current models for future work. 
+
+This leads us to the successful establishment of a simulation environment for evaluation of LTE-A and especially D2D, one of the main goals of this thesis. Despite much trial and error, the work presented here will, in the mind of the author, make a positive impact in his future investigative efforts, especially in the context of already ongoing studies in the institute.
+
+The way for future work seems relatively clear:
+
+MODEL AT ENB
+CHANGING LAMBDA
+INCORPORATION OF OTHER KINDS OF AGGREGATION (MULTI HOP)

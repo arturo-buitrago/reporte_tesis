@@ -20,7 +20,7 @@ The actual simulations, as well as the measures used to quantify the relative pe
 Often called a ``completely'' random process, a Poisson process is a process where every event is stochastically independent of all other points in it, see \cite{Keeler2016}. This generation process is common in investigations about the performance of networks, as eloquently expressed by \cite{Keeler} In our case, the Poisson-distributed random variable are the number of points in the bounded region we are investigating. The distribution is described by the following probability mass function:
 
 \begin{equation} \label{eq:Poisson}
-P\left( x\ points\ in\ region \right) = \frac{{e^{ - \lambda } \lambda ^x }}{{x!}}
+f_X(x\,\text{points in region}) = \frac{{e^{ - \lambda } \lambda ^x }}{{x!}}
 \end{equation}
 
 By providing the $\lambda$ above, often called mean density (\cite{Keeler2016}), we can adjust the expected amount of points generated in a given area. In order to evaluate the robustness of different algorithms, the tests were made with a variety of $\lambda$ values. The generated amount of points are then distributed in the given area with a uniform distribution, where both the $x$ and $y$ value are distributed along the appropriate axis. In both cases, the \textit{Python} package \textit{NumPy} was utilized for the realization of the random distributions.
@@ -203,52 +203,21 @@ After generating the shadow fading variables with equation \ref{eq:SF} and the a
 
 These shadow fading fading values are added to the pathloss values in order to fully account for all the obstacles in the way of the signal between two devices. The complete attenuation value then determines the received signal strength at the target device.
 
-A summary of the relevant parameters utilized for the calculation of the pathloss can be seen in table \ref{tbl:PL}
+A summary of the relevant parameters utilized for the calculation of the pathloss can be seen in table \ref{tbl:PL}, part of chapter \ref{Results}.
 
-\begin{table}[H]
-\begin{center}
- \begin{tabular}{||p{7cm}|p{2.5cm}||} 
- \hline
- \textbf{Parameter} & \multicolumn{1}{|c||}{\textbf{Value}}\\
- \hline\hline
- Mean point density $\lambda$ & \multicolumn{1}{|c||}{$50 - 1000$} \\ 
- \hline
- Center Frequency $f_c$& \multicolumn{1}{|c||}{$2\,\text{GHz}$} \\
- \hline
- Wavelength $\lambda_{WL}$ & \multicolumn{1}{|c||}{$0.15\,\text{m}$}\\
- \hline
- Speed of light $c$ & \multicolumn{1}{|c||}{$3 \cdot 10^8\,\frac{\text{m}}{\text{s}}$}\\
- \hline
- Height of UE $h_{UE}$ & \multicolumn{1}{|c||}{$1.5\,\text{m}$} \\
- \hline
- Height of BS $h_{BS}$ & \multicolumn{1}{|c||}{$10\,\text{m}$} \\
- \hline
- Environment height $h_e$ & \multicolumn{1}{|c||}{$1\,\text{m}$} \\
- \hline
- Power decay constant $n_1$ & \multicolumn{1}{|c||}{$2.2$}\\
- \hline
- Power decay constant $n_2$ & \multicolumn{1}{|c||}{$4.0$}\\
- \hline
- Shadow Fading mean $\mu_{L_s}$ &\multicolumn{1}{|c||}{$0$} \\
- \hline
- Shadow Fading standard deviation $\sigma_{L_s}$ & \multicolumn{1}{|c||}{$7\,\text{dB}$}\\
- \hline
- Decorrelation distance $d_{corr}$ &\multicolumn{1}{|c||}{$8\,\text{m}$}\\
- \hline
-\end{tabular}
-\end{center}
-\caption{Parameters relevant for pathloss calculation}
-\label{tbl:PL}
-\end{table}
 
 \section{Random access procedure and interference} \label{RAP}
 When reducing the load that the eNB experiences as a result of an increase in the amount of devices connecting to it by means of clustering, a large amount of the load is simply transferred to the cluster heads. These have then to take up the functions of the eNB in terms of implementing a random access procedure through which to service the UEs connecting to it. As mentioned in section \ref{B:D2D}, we contemplate an explicit separation of resources for normal BS to UE communication and D2D communication, putting further constraints on the ability of the cluster head to detect and separate signals using the same resource blocks. In order to best model these kinds of phenomena, the author utilized simulations developed by his supervisor, M.Sc. Mikhail Vilgelm, that were kindly put at his disposition for this work.
 
-Firstly, a Poisson process is used in modeling the arrival of packages proceeding from connected UEs to the appropriate cluster head. This Poisson arrival process is analogous to that shown in equation \ref{eq:Poisson} and yields the amount of packages arrived at a certain point in time instead of points in an area. The arrival rate, $\lambda_A$ was set by recommendation of the author's supervisor to a level where the derivative of the throughput with respect to the arrival rate is positive, at $\lambda_A = 1.5$.
+Firstly, a Poisson process is used in modeling the arrival of packages proceeding from connected UEs to the appropriate cluster head. This Poisson arrival process is analogous to that shown in equation \ref{eq:Poisson} and yields the amount of packages arrived at a certain point in time instead of points in an area. The arrival rate of requests to a given cluster, $\lambda_A$ was set by recommendation of the author's supervisor to a level where the derivative of the throughput with respect to the arrival rate is positive, at $\lambda_A = 1.5$. It is important to note here that the arrival rate is fixed for each cluster head. This means that no matter the amount of UEs connecting to said cluster head, the mean expected amount of requests in a given time frame also remains at a fixed level.
 
 The requests are generated at the given rate and broadcast with a set transmission power $P_{Tx}$. Although there are many proposals for power control schemes in D2D communications, such as \cite{Erturk2013}, \cite{Wei2012} or \cite{Lee}, due to there being so many varied schemes and them adding such complexity to the simulation, it was decided that power control would not be part of the scope of this work. As in \cite{Klugel2014a}, we decide to use $P_{Tx} = 23\,\text{dBm}$ for our simulation, which is incidentally the power level used for coverage issue identification in \cite{3rdGenerationPartnershipProject;2012} and the maximum transmit power for public safety defined in \cite{3rdGenerationPartnershipProject;}, both by the 3GPP.
 
-The power is then affected by the appropriate attenuation at the spot of the receiving device (see section \ref{PL}) and the resulting power is the received power $P_{Rx|dBm} = P_{Tx|dBm} - PL_{|dB}$. In order to assess whether a given signal has reached the cluster head with enough power to be detected, we look at the SINR (Signal-to-Interference-and-Noise-Ratio) of the transmission. For the calculation of the noise we use a thermal noise density $N_0 = -174\,\frac{\text{dBm}}{\text{Hz}}$, UE receiver noise figure $NF_{UE} = 9\,\text{dB}$ and system bandwidth $W = 10\,\text{MHz}$, as defined in \cite{3rdGenerationPartnershipProject;2012}. 
+The power is then affected by the appropriate attenuation at the spot of the receiving device (see section \ref{PL}) and the resulting power is the received power $P_{Rx|dBm} = P_{Tx|dBm} - PL_{|dB}$. In order to assess whether a given signal has reached the cluster head with enough power to be detected, we look at the SINR (Signal-to-Interference-and-Noise-Ratio) of the transmission. For the calculation of the noise we use a thermal noise density $N_0 = -174\,\frac{\text{dBm}}{\text{Hz}}$, UE receiver noise figure $NF_{UE} = 9\,\text{dB}$ and system bandwidth $W = 10\,\text{MHz}$, as defined in \cite{3rdGenerationPartnershipProject;2012}, see equation \ref{eq:noise}.
+
+\begin{equation}\label{eq:noise}
+P_{N|dBm} = N_0 \cdot W + NF_{|dB}
+\end{equation} 
 
 The incoming requests are checked for additional interference coming from other requests using the same preamble, both within and without the cluster. The received power $I$ of those interfering signals at the cluster head are added and that total added to the noise power $P_N$ to finally calculate the SINR, see equation \ref{eq:SINR}. As mentioned earlier, the available preambles for transmission of a D2D link are drawn from the overall pool of preambles available in LTE-A. As mentioned in \cite{Cox2012}, 64 preambles are available to the cell, only 6 of which are available for D2D communication. This is to allow normal cellular UEs to experience an acceptable QoS (Quality of Service), while still allowing other devices access to the network.
 
@@ -260,50 +229,16 @@ As to the minimum SINR needed to connect to the cluster head, a threshold of $SI
 
 Finally, requests clearing the threshold will be handled by the cluster head, who will then check for intra-cluster preamble collisions and give feedback, negative or positive, to the UEs. For simplicity's sake, feedback is assumed to arrive safely back at the UE; positive feedback elicits no action from the original transmitter. Upon reception of negative feedback, on the other hand, the UE ``backs off'' for an amount of time before attempting the connection once again at a later point in time. If the device is told to back off 20 times, it assumes the connection has failed completely and will not try again until another packet is generated at that UE. The time for each slot was set at $10\,\text{ms}$, while the overall simulation duration was put at $5\,\text{s}$.
 
-Readers can find a summary of all used parameters for this stage on table \ref{tbl:RA}.
-
-\begin{table}[H]
-\begin{center}
- \begin{tabular}{||p{10.5cm}|p{2.5cm}||} 
- \hline
- \textbf{Parameter} & \multicolumn{1}{|c||}{\textbf{Value}}\\
- \hline\hline
- Request arrival rate $\lambda_A$ & \multicolumn{1}{|c||}{$1.5$} \\ 
- \hline
- Transmission power $P_{Tx}$& \multicolumn{1}{|c||}{$23\,\text{dBm}$} \\
- \hline
- Noise density $N_0$ & \multicolumn{1}{|c||}{$-174\,\frac{\text{dBm}}{\text{Hz}}$}\\
- \hline
- UE receiver noise figure $NF_{UE}$ & \multicolumn{1}{|c||}{$9\,\text{dB}$}\\
- \hline
- BS receiver noise figure $NF_{BS}$ & \multicolumn{1}{|c||}{$5\,\text{dB}$} \\
- \hline
- System Bandwidth $W$ & \multicolumn{1}{|c||}{$10\,\text{MHz}$} \\
- \hline
- Number of total LTE-A preambles & \multicolumn{1}{|c||}{$64$} \\
- \hline
- Number of preambles available for D2D communication $m$& \multicolumn{1}{|c||}{$6$}\\
- \hline
- SINR threshold $SINR_{thr}$ & \multicolumn{1}{|c||}{$10\text{dB}$}\\
- \hline
- Slot duration & \multicolumn{1}{|c||}{$10\,\text{ms}$}\\
- \hline
- Total duration &\multicolumn{1}{|c||}{$5\,\text{s}$}\\
- \hline
-\end{tabular}
-\end{center}
-\caption{Parameters relevant for random access and interference}
-\label{tbl:RA}
-\end{table}
+Readers can find a summary of all used parameters for this stage on table \ref{tbl:RA}, in chapter \ref{Results}.
 
 The last piece of the puzzle is, of course, the actual mapping of UEs to cluster heads. These are fed into the random access and interference simulation by the clustering algorithms.
 
 \section{Clustering Algorithms} \label{ClusteringAlgs}
 Clustering algorithms determine which UEs will be connected to which cluster heads, as well as which UEs will turn into cluster heads in the first place. Because of the nature of our research (regarding D2D communication), we eschewed any schemes that required dedicated gateways into the networks. In the definition of the scope of this work, we also decided to leave out any algorithms with multi-hop possibilities, simply due to the sheer complexity that would have represented. Algorithms presented here thus feature only one aggregation stage at the cluster head, which then forwards the data to the eNB.
 
-Most of the work done in clustering algorithms for wireless networks comes from the area of Wireless Sensor Networks (WSN), where large amounts of sensor nodes form a network communicating with a central unit of control. These types of structures lend themselves especially to grouping and aggregation, considering especially that there is often a lot of redundancy in the collected data. Energy efficiency and resilience of networks is often of paramount importance, in an attempt to minimize maintenance overhead. There have been several studies about clustering algorithms in this area, such as \cite{Jiang2009} or \cite{Afsar2014}. Looking toward WSNs seems like the closest logical step when considering D2D communications, but an effort was also made to look at algorithms not native to WSNs.
+Most of the work done in clustering algorithms for wireless networks comes from the area of Wireless Sensor Networks (WSN), where large amounts of sensor nodes form a network communicating with a central unit of control. These types of structures lend themselves especially to grouping and aggregation, considering especially that there is often a lot of redundancy in the collected data. Energy efficiency and resilience of networks is often of paramount importance, in an attempt to minimize maintenance overhead. There have been several studies about clustering algorithms in this area, such as \cite{Jiang2009} or \cite{Afsar2014}. Unfortunately, the fundamentally different nature between static sensors and LTE-A capable devices severely limits the applicability of most schemes to our scenario.
 
-Additionally to WSN algorithms we included schemes normally used in statistical data analysis, specifically a couple of hierarchical clustering schemes. These feature a progressive merging of clusters depending on a variety of criteria; distance is often used when determining the level of kinship two points or clusters possess. Hierachical clustering is preferred over other types of schemes due to us working under the assumption that there is few information present in the system a priori. This assumption makes the necesary estimation of the final number of clusters (cf. \cite{Everitt2011}) exceedingly complicated; implementing advanced heuristics or other such techniques to overcome this was of no interest to us.
+Additionally to a WSN algorithm we included schemes normally used in statistical data analysis, specifically a couple of hierarchical clustering schemes. These feature a progressive merging of clusters depending on a variety of criteria; distance is often used when determining the level of kinship two points or clusters possess. Hierachical clustering is preferred over other types of schemes due to us working under the assumption that there is few information present in the system a priori. This assumption makes the necesary estimation of the final number of clusters (cf. \cite{Everitt2011}) exceedingly complicated; implementing advanced heuristics or other such techniques to overcome this was of no interest to us.
 
 When possible, we have tried instead to use measures relevant to our research area, such as Signal-to-Noise Ratio (SNR) and Signal-to-Interference-and-Noise Ratio (SINR) to quantify connectivity. 
 
@@ -333,7 +268,7 @@ d(A,B) = \max_{\vec{x} \in A,\,\vec{y} \in B} ||\vec{x}  - \vec{y}||
 
 Instead of using euclidean distance, as is the norm, we instead define the distance between two points as the SNR between them. Note that this ``reverses'' the algorithm's logic, meaning that instead of finding the minimum distance among all maximum distances in a cluster for a merge, we find the maximum SNR among all minimum SNRs inside a cluster. The algorithm then takes two clusters with the smallest such SNR ``distance'' and merges them.  Normally, it would continue to do so until there are no more clusters to merge, i.e. there only remains one cluster containing all the points in the set. In order to avoid this, with every potential merge of two clusters, we check if the potential D2D link is over a certain threshold. For this threshold we chose the same threshold introduced in section \ref{RAP}, $10 \text{dB}$. When no further links under that level are possible, the algorithms stops. The fact that we are using only single-hop aggregation constrains our options quite starkly; a viable link must be possible to all members of the cluster.
 
-In this type of scheme, the election of the cluster head seems almost arbitrary. In order to maintain verisimilitude of the simulation, we designate the closest UE in terms of SNR to the eNB (position given in section \ref{mh_grid}) as the cluster head.
+In this type of scheme, the election of the cluster head seems almost arbitrary. In order to maintain verisimilitude of the simulation, we designate the UE with the smallest average distance to all other UEs as the cluster head.
 
 \subsection{Single-Link Clustering}\label{SLC}
 The ``nearest neighbor technique'', second of the best-known hierarchichal algorithms and ``one of the simplest hierarchical clustering methods'' (\cite{Everitt2011}) defines the distance between two clusters as ``the minimum distance between their members'', see equation \ref{eq:SLC}. This means that only one link will define the proximity between two entities, regardless of the density of the points inside them.
@@ -342,7 +277,13 @@ The ``nearest neighbor technique'', second of the best-known hierarchichal algor
 d(A,B) = \min_{\vec{x} \in A,\,\vec{y} \in B} ||\vec{x}  - \vec{y}||
 \end{equation}
 
-Here, too, we redefine the distance between to points as the SNR between the two. We also set an identical limit to the one used in Complete-Link Clustering (see above, section \ref{CLC}) in order to stop the simulation when appropriate
+Here, too, we redefine the distance between to points as the SNR between the two. Despite its similarity to Complete-Link (see above, section \ref{CLC}), the nature of the algorithm makes it ``[not] care about compactness or balance'' \cite{Shalizi2009}. Preliminary tests showed that setting the same criteria for stopping as in Complete-Link would result most often in a gigantic, all-encompassing cluster containing all UEs, completely negating the effect of data aggregation. 
+
+Consequently, we defined a stopping criteria not based on a threshold $SNR$, but rather on a threshold percentage of UEs serving as clusters $P_{SINGLE}$, analogous to the $P_{LEACH}$ of LEACH. The resulting number of clusters is then defined as 
+\begin{equation}
+\text{Desired number of clusters} = P_{SINGLE}\,\cdot\,\lambda\,.
+\end{equation}
+The values chosen for $P_{SINGLE}$ cover the same range as those of $P_{LEACH}$. This adjustment makes comparison with the other clustering algorithms significantly easier and allows us to still use Single-Link as an algorithm. Here, just as in Complete-Link, we define the cluster head as the UE with the lowest average distance to all other UEs.
 
 \subsection{Ward's Method}\label{WM}
 Originally formulated as an approach in 1963, in \cite{Ward1963}, Ward's method provides an interesting cost metric for the merging of two clusters. As stated more succinctly in \cite{Shalizi2009}, the method ``says that the distance between two clusters, A and B, is how much the sum of squares will increase when we merge them''. Ward formulates a merging cost $\Delta(A,B)$ based on the the distance between the geographical center of each cluster and utilizes this information to merge the two clusters with the lowest cost:
@@ -350,15 +291,15 @@ Originally formulated as an approach in 1963, in \cite{Ward1963}, Ward's method 
 \begin{equation}\label{eq:wards_cost}
 \Delta(A,B) = \frac {n_A\,n_B}{n_A + n_B}\,||\vec{m_A} - \vec{m_B}||^2\,,
 \end{equation}
-with $n_A$ and $n_B$ the number of points in the cluster and $\vec{m_A}$ and $\vec{m_B}$ the center of clusters A and B. 
+with $n_A$ and $n_B$ the number of points in the cluster and $\vec{m_A}$ and $\vec{m_B}$ the center of clusters A and B. The ``center'' of the cluster in our own implementation remains the geographical center.
 
 Here again, a limit must be provided for the algorithm not to form a single gigantic cluster; we continue using the D2D communication threshold $10 \text{dB}$. When the algorithm detects that there are no further connections possible over the given limit, it stops. A simple implementation of the algorithm can be observed in figure \ref{fig:ward_math}.
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[width=.4\linewidth]{figures/ward_math}
 \caption{Sample clustering as a result of Ward's Method \cite{Shalizi2009}}
 \label{fig:ward_math}
 \end{figure}
 
-As with Complete-Link clustering, we assign a cluster head posterior to the creation of the cluster by designating the UE with the minimum SNR to the designated base station.
+The assignment of the cluster head occurs as in both of the other hierarchical algorithms.
